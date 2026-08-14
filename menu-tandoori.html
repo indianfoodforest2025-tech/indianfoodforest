@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Tandoori & Kebabs | Indian Food Forest</title>
+    <meta name="description" content="Relish the smoky flavors of our premium Tandoori and Nawabi Kebabs at Indian Food Forest, Thane. Authentic Veg & Non-Veg charcoal-grilled delicacies.">
+    
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="loader-logo">
+            <h2>IFF</h2>
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <!-- TOP INFO BAR -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-left">
+                <span><i class="far fa-clock"></i> 12:00 PM - 02:00 AM</span>
+                <span class="hide-mobile"><i class="fas fa-map-marker-alt"></i> Thane Belapur MIDC Road, Thane</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="https://www.instagram.com/indianfoodforest" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:indianfoodforest2025@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">
+                <span class="brand-name">INDIAN <span class="gold-text">FOOD FOREST</span></span>
+            </a>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <nav class="nav-links" id="nav-links">
+                <ul class="menu-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#menu" class="active">Our Menu <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="menu-starters.html">Soups & Starters</a></li>
+                            <li><a href="menu-tandoori.html" class="active">Tandoori & Kebabs</a></li>
+                            <li><a href="menu-asian.html">Asian Delights</a></li>
+                            <li><a href="menu-indian.html">The Indian Kitchen</a></li>
+                            <li><a href="menu-biryani.html">Rice E Dastaan (Biryani)</a></li>
+                            <li><a href="menu-specials.html">Chef's Specials</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-action">
+                    <a href="tel:+919044449969" class="btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header menu-bg">
+        <div class="header-overlay"></div>
+        <div class="container text-center">
+            <h1 class="page-title">Tandoori & <span class="gold-text">Kebabs</span></h1>
+            <p class="breadcrumbs"><a href="index.html">Home</a> <i class="fas fa-angle-right"></i> Menu <i class="fas fa-angle-right"></i> Tandoori</p>
+        </div>
+    </section>
+
+    <!-- CATEGORY JUMP MENU -->
+    <div class="category-nav">
+        <div class="container text-center">
+            <a href="#veg-tandoori" class="cat-btn">Veg Tandoori</a>
+            <a href="#nonveg-tandoori" class="cat-btn">Non-Veg Tandoori</a>
+            <a href="#nawabi-kebabs" class="cat-btn">Nawabi Kebabs</a>
+        </div>
+    </div>
+
+    <!-- VEG TANDOORI SECTION -->
+    <section id="veg-tandoori" class="menu-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Smoky <span class="gold-text">Vegetarian</span> Grill</h2>
+                <div class="heading-divider"></div>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1599487405253-066bc3e43cb3?q=80&w=800', 'Paneer Tikka', '₹260', 'Veg', 'Fresh cottage cheese cubes marinated in traditional spiced yogurt, charcoal-grilled to perfection.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1599487405253-066bc3e43cb3?q=80&w=400" alt="Paneer Tikka" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Paneer Tikka</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">₹260</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1599487405253-066bc3e43cb3?q=80&w=800', 'Paneer Pahadi Tikka', '₹280', 'Veg', 'Paneer marinated in a vibrant green paste of mint, coriander, and green chillies, roasted in a clay oven.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1599487405253-066bc3e43cb3?q=80&w=400" alt="Paneer Pahadi" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Paneer Pahadi Tikka</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">₹280</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1599487405253-066bc3e43cb3?q=80&w=800', 'Paneer Afghani Tikka', '₹300', 'Veg', 'Rich and creamy! Paneer cubes coated in a luscious marinade of cream, cheese, and mild spices.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1599487405253-066bc3e43cb3?q=80&w=400" alt="Paneer Afghani" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Paneer Afghani Tikka</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">₹300</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1599487405253-066bc3e43cb3?q=80&w=800', 'Paneer Malai Tikka', '₹280', 'Veg', 'Melt-in-your-mouth paneer kebabs flavored with cardamom, cashew paste, and fresh cream.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1599487405253-066bc3e43cb3?q=80&w=400" alt="Paneer Malai" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Paneer Malai Tikka</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">₹280</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1599487405253-066bc3e43cb3?q=80&w=800', 'Paneer Angara Tikka', '₹320', 'Veg', 'For spice lovers! Fiery red paneer tikka infused with a strong smoky charcoal flavor.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1599487405253-066bc3e43cb3?q=80&w=400" alt="Paneer Angara" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Paneer Angara Tikka</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">₹320</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1599487405253-066bc3e43cb3?q=80&w=800', 'Black Pepper Kebab (Veg)', '₹280', 'Veg', 'Robust and peppery! Soft paneer skewers coated with crushed black pepper and Indian herbs.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1599487405253-066bc3e43cb3?q=80&w=400" alt="Black Pepper Kebab" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Black Pepper Kebab</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">₹280</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NON-VEG TANDOORI SECTION -->
+    <section id="nonveg-tandoori" class="menu-section section-padding bg-dark">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Classic <span class="gold-text">Tandoori</span> Chicken</h2>
+                <div class="heading-divider"></div>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?q=80&w=800', 'Amritsari Tandoori', 'Half ₹250 / Full ₹450', 'Non-Veg', 'The iconic North Indian style roasted chicken, marinated in bold spices, mustard oil, and yogurt.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?q=80&w=400" alt="Amritsari Tandoori" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Amritsari Tandoori</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">Half ₹250 / Full ₹450</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?q=80&w=800', 'Afghani Tandoori', 'Half ₹260 / Full ₹470', 'Non-Veg', 'Creamy, rich, and mildly spiced. Whole chicken roasted in a marinade of cashew paste, cream, and cheese.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?q=80&w=400" alt="Afghani Tandoori" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Afghani Tandoori</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">Half ₹260 / Full ₹470</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?q=80&w=800', 'Pahadi Tandoori', 'Half ₹250 / Full ₹450', 'Non-Veg', 'A burst of fresh herbs! Chicken marinated in mint, coriander, and green chilli paste, grilled to perfection.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?q=80&w=400" alt="Pahadi Tandoori" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Pahadi Tandoori</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">Half ₹250 / Full ₹450</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?q=80&w=800', 'Malai Tandoori', 'Half ₹280 / Full ₹470', 'Non-Veg', 'Incredibly soft and juicy chicken marinated in thick cream, white pepper, and subtle cardamom.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?q=80&w=400" alt="Malai Tandoori" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Malai Tandoori</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">Half ₹280 / Full ₹470</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1599901860904-17e08c2a4c28?q=80&w=800', 'Tangadi Kebab Tandoori', '₹250', 'Non-Veg', 'Juicy chicken drumsticks marinated overnight in hung curd and tandoori spices, smoked in the clay oven.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1599901860904-17e08c2a4c28?q=80&w=400" alt="Tangadi Kebab" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Tangadi Kebab Tandoori</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">₹250</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NAWABI KEBABS SECTION -->
+    <section id="nawabi-kebabs" class="menu-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Royal <span class="gold-text">Nawabi</span> Kebabs</h2>
+                <div class="heading-divider"></div>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Grouping similar priced Tikka items for better UI -->
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=800', 'Chicken Tikka / Pahadi / Afghani / Amritsari', '₹250', 'Non-Veg', 'Boneless chicken chunks marinated in your choice of classic red tikka, green pahadi, creamy afghani, or bold amritsari spices.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=400" alt="Chicken Tikka Collection" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Chi. Premium Tikkas</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">₹250 (Each Varient)</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=800', 'Shola Kebab / Banjara Kebab', '₹260 - ₹280', 'Non-Veg', 'Rustic and highly spiced. Banjara brings the heat of traditional spices, while Shola offers a unique blazing flavor.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=400" alt="Banjara Kebab" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Shola / Banjara Kebab</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">₹260 - ₹280</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=800', 'Angara Kebab', '₹300', 'Non-Veg', 'Fiery, vibrant, and incredibly smoky. Chicken kebabs infused with hot red chillies and smoked with live coal.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=400" alt="Angara Kebab" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Angara Kebab</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">₹300</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1599901860904-17e08c2a4c28?q=80&w=800', 'Tangdi Kebab', '₹250', 'Non-Veg', 'Premium chicken drumsticks coated in a secret blend of Nawabi spices, slow-cooked in the tandoor.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1599901860904-17e08c2a4c28?q=80&w=400" alt="Tangdi Kebab" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Tangdi Kebab</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">₹250</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=800', 'Reshmi Kebab / Malai Kebab', '₹280 - ₹300', 'Non-Veg', 'As soft as silk! Mildly spiced, extremely tender chicken kebabs enriched with cream and cheese.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=400" alt="Reshmi Kebab" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Reshmi / Tikka Malai Kebab</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">₹280 - ₹300</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=800', 'Chi. Achari / Black Pepper Kebab', '₹250 - ₹280', 'Non-Veg', 'Tangy Achari (pickled spice) flavor or the bold punch of crushed black pepper coated over juicy chicken chunks.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=400" alt="Achari Kebab" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Achari / Black Pepper Kebab</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">₹250 - ₹280</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISH DETAIL MODAL (Pop-up system triggered by JavaScript) -->
+    <div id="dishModal" class="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-img-wrapper">
+                <img id="modalImg" src="" alt="Dish Full Image">
+            </div>
+            <div class="modal-info">
+                <div class="modal-title-row">
+                    <h2 id="modalTitle">Dish Name</h2>
+                    <div id="modalDietIcon" class="diet-indicator"></div>
+                </div>
+                <h3 id="modalPrice" class="gold-text">₹0</h3>
+                <div class="modal-divider"></div>
+                <p id="modalDesc">Dish description.</p>
+                <button class="btn-primary full-width" onclick="closeModal()">Close Window</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOATING ACTION BUTTONS -->
+    <a href="https://wa.me/919044449969?text=Hello%20Indian%20Food%20Forest,%20I%20have%20an%20enquiry!" class="floating-btn whatsapp-float" target="_blank" aria-label="WhatsApp Us">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <button id="backToTop" class="floating-btn back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- FOOTER SECTION -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-widget about-widget">
+                <h3 class="footer-logo">INDIAN <span class="gold-text">FOOD FOREST</span></h3>
+                <p>A place where Taste, Tradition & Togetherness come alive. Join us for a memorable dining experience.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/indianfoodforest" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-widget links-widget">
+                <h4>Quick Menu</h4>
+                <ul>
+                    <li><a href="about.html"><i class="fas fa-angle-right"></i> Our Story</a></li>
+                    <li><a href="menu-starters.html"><i class="fas fa-angle-right"></i> Soups & Starters</a></li>
+                    <li><a href="menu-indian.html"><i class="fas fa-angle-right"></i> Main Course</a></li>
+                    <li><a href="contact.html"><i class="fas fa-angle-right"></i> Table Reservation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-widget contact-widget">
+                <h4>Reach Us</h4>
+                <ul class="contact-info">
+                    <li><a href="https://maps.app.goo.gl/placeholder" target="_blank"><i class="fas fa-map-marker-alt"></i> Shop No. 50, Ramnagar Gate, MIDC Road, Thane - 400708</a></li>
+                    <li><a href="tel:+919044449969"><i class="fas fa-phone-alt"></i> +91 9044449969 / 9137769044</a></li>
+                    <li><a href="mailto:indianfoodforest2025@gmail.com"><i class="fas fa-envelope"></i> indianfoodforest2025@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Indian Food Forest. All Rights Reserved. | <a href="contact.html">Support: +91 7304301858</a></p>
+        </div>
+    </footer>
+
+    <!-- LINK TO JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
