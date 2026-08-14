@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>The Indian Kitchen | Indian Food Forest</title>
+    <meta name="description" content="Savor the rich, authentic Indian curries and freshly baked tandoori breads at Indian Food Forest. Premium Veg & Non-Veg Bhojan Essentials.">
+    
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="loader-logo">
+            <h2>IFF</h2>
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <!-- TOP INFO BAR -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-left">
+                <span><i class="far fa-clock"></i> 12:00 PM - 02:00 AM</span>
+                <span class="hide-mobile"><i class="fas fa-map-marker-alt"></i> Thane Belapur MIDC Road, Thane</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="https://www.instagram.com/indianfoodforest" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:indianfoodforest2025@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">
+                <span class="brand-name">INDIAN <span class="gold-text">FOOD FOREST</span></span>
+            </a>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <nav class="nav-links" id="nav-links">
+                <ul class="menu-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#menu" class="active">Our Menu <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="menu-starters.html">Soups & Starters</a></li>
+                            <li><a href="menu-tandoori.html">Tandoori & Kebabs</a></li>
+                            <li><a href="menu-asian.html">Asian Delights</a></li>
+                            <li><a href="menu-indian.html" class="active">The Indian Kitchen</a></li>
+                            <li><a href="menu-biryani.html">Rice E Dastaan (Biryani)</a></li>
+                            <li><a href="menu-specials.html">Chef's Specials</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-action">
+                    <a href="tel:+919044449969" class="btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header menu-bg">
+        <div class="header-overlay"></div>
+        <div class="container text-center">
+            <h1 class="page-title">The Indian <span class="gold-text">Kitchen</span></h1>
+            <p class="breadcrumbs"><a href="index.html">Home</a> <i class="fas fa-angle-right"></i> Menu <i class="fas fa-angle-right"></i> Indian Curries</p>
+        </div>
+    </section>
+
+    <!-- CATEGORY JUMP MENU -->
+    <div class="category-nav">
+        <div class="container text-center">
+            <a href="#veg-main" class="cat-btn">Veg Curries</a>
+            <a href="#nonveg-main" class="cat-btn">Chicken Curries</a>
+            <a href="#dal-breads" class="cat-btn">Dal & Breads</a>
+        </div>
+    </div>
+
+    <!-- VEG MAIN COURSE SECTION -->
+    <section id="veg-main" class="menu-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Bhojan Essentials <span class="gold-text">[Veg]</span></h2>
+                <div class="heading-divider"></div>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Grouped Paneer Items -->
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1631452180519-c014fe946bc3?q=80&w=800', 'Paneer Butter Masala / Makhanwala', '₹240 - ₹260', 'Veg', 'Rich, creamy, and mildly sweet. Soft paneer cubes simmered in a luscious tomato, butter, and cashew gravy.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc3?q=80&w=400" alt="Paneer Butter Masala" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Paneer Butter Masala / Makhanwala</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">₹240 - ₹260</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1631452180519-c014fe946bc3?q=80&w=800', 'Paneer Masala / Kolhapuri / Kadhai', '₹200 - ₹220', 'Veg', 'Classic homestyle or spicy Kolhapuri paneer gravies tossed with robust Indian spices and bell peppers.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc3?q=80&w=400" alt="Spicy Paneer Curries" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Paneer Masala / Kolhapuri</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">₹200 - ₹220</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1631452180519-c014fe946bc3?q=80&w=800', 'Palak Paneer / Mutter Paneer', '₹220 - ₹240', 'Veg', 'Nutritious spinach gravy or classic green peas combined with soft cottage cheese chunks.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc3?q=80&w=400" alt="Palak Paneer" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Palak / Mutter Paneer</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">₹220 - ₹240</p>
+                    </div>
+                </div>
+
+                <!-- Veggies & Kofta -->
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=800', 'Veg Kolhapuri / Veg Kadhai', '₹200 - ₹220', 'Veg', 'Assorted fresh vegetables slow-cooked in a spicy, aromatic brown gravy with traditional ground spices.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=400" alt="Veg Mix Curries" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Veg Kolhapuri / Kadhai</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">₹200 - ₹220</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=800', 'Malai Kofta / Paneer Kofta', '₹250 - ₹260', 'Veg', 'Melt-in-mouth cottage cheese and potato dumplings simmered in a rich, creamy, and mildly sweet white or cashew gravy.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=400" alt="Malai Kofta" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Malai / Paneer Kofta</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">₹250 - ₹260</p>
+                    </div>
+                </div>
+
+                <!-- Premium Veg Gravies -->
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1631452180519-c014fe946bc3?q=80&w=800', 'Paneer Cheese Ghotala / Pasanda', '₹280 - ₹300', 'Veg', 'A highly premium, rich, and dense preparation overloaded with cheese, paneer mash, and royal Indian spices.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc3?q=80&w=400" alt="Premium Paneer" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Paneer Cheese Ghotala</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">₹280 - ₹300</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1631452180519-c014fe946bc3?q=80&w=800', 'Kaju Masala / Paneer Kaju Masala', '₹260 - ₹280', 'Veg', 'Roasted whole premium cashews and soft paneer cooked in a rich, sweet-spicy onion and tomato base.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc3?q=80&w=400" alt="Kaju Masala" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Kaju / Paneer Kaju Masala</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">₹260 - ₹280</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1631452180519-c014fe946bc3?q=80&w=800', 'Paneer Tikka / Tawa / Angara Masala', '₹250 - ₹280', 'Veg', 'Smoky tandoori paneer or fiery Angara paneer chunks tossed in thick, robust, restaurant-style masala gravy.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc3?q=80&w=400" alt="Tikka Masala" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Paneer Tikka / Angara Masala</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">₹250 - ₹280</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NON-VEG MAIN COURSE SECTION -->
+    <section id="nonveg-main" class="menu-section section-padding bg-dark">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Bhojan Essentials <span class="gold-text">[Non-Veg]</span></h2>
+                <div class="heading-divider"></div>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Signature Items -->
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?q=80&w=800', 'Butter Chicken', 'Half ₹300 / Full ₹600', 'Non-Veg', 'Our undisputed bestseller. Roasted tandoori chicken simmered in a velvety smooth, rich tomato and butter gravy.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?q=80&w=400" alt="Butter Chicken" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Butter Chicken</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">Half ₹300 / Full ₹600</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?q=80&w=800', 'Chicken Murg Musalam', 'Half ₹400 / Full ₹700', 'Non-Veg', 'A feast fit for royalty. Whole roasted chicken heavily spiced and served in a rich, thick minced chicken (kheema) gravy.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?q=80&w=400" alt="Murg Musalam" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Chicken Murg Musalam</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">Half ₹400 / Full ₹700</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?q=80&w=800', 'Chicken Handi / Agari / Malwani', 'Half ₹300 / Full ₹500', 'Non-Veg', 'Authentic traditional handi cooking. Choose classic restaurant style, or local fiery Agari and Malwani coastal flavors.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?q=80&w=400" alt="Chicken Handi" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Chi. Handi / Agari / Malwani</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">Half ₹300 / Full ₹500</p>
+                    </div>
+                </div>
+
+                <!-- Everyday Classics -->
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=800', 'Chicken Curry / Masala / Kolhapuri', '₹220', 'Non-Veg', 'The comforting homestyle chicken curry, thick masala gravy, or the incredibly spicy and robust Kolhapuri preparation.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=400" alt="Chicken Curry" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Chicken Curry / Masala</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">₹220</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=800', 'Chicken Kadhai / Kheema Masala', '₹240 - ₹280', 'Non-Veg', 'Chicken cooked with crunchy bell peppers and onions in a kadhai, or minced chicken slow-cooked with robust spices.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=400" alt="Chicken Kadhai" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Chicken Kadhai / Kheema</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">₹240 - ₹280</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=800', 'Chicken Bhuna / Angara / Afghani', '₹260 - ₹300', 'Non-Veg', 'Thick, roasted Bhuna masala, smoky Angara, or creamy rich Afghani gravy.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=400" alt="Chicken Bhuna" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Chicken Bhuna / Angara</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">₹260 - ₹300</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=800', 'Chicken Tikka / Tawa / Tangadi Masala', '₹280 - ₹350', 'Non-Veg', 'Boneless tandoori tikka, tawa-roasted chicken, or juicy tangadi kebabs served in our signature rich masala base.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=400" alt="Tikka Masala" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Chi. Tikka / Tangadi Masala</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">₹280 - ₹350</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=800', 'Chicken Patiala / Cheese Ghotala', '₹300 - ₹350', 'Non-Veg', 'Premium restaurant specials. Patiala chicken wrapped in egg omelet, or the incredibly rich Cheese Ghotala.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=400" alt="Patiala Chicken" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Chicken Patiala / Ghotala</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">₹300 - ₹350</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DAL & BREADS SECTION -->
+    <section id="dal-breads" class="menu-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Dal Pakwan & <span class="gold-text">Wheat Roti</span></h2>
+                <div class="heading-divider"></div>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Dal Section -->
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1546833999-b9f581a1996d?q=80&w=800', 'Dal Tadka / Dal Fry', '₹150 - ₹160', 'Veg', 'Comfort in a bowl. Yellow lentils tempered with cumin, garlic, dry red chillies, and pure ghee.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?q=80&w=400" alt="Dal Tadka" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Dal Tadka / Dal Fry</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">₹150 - ₹160</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1546833999-b9f581a1996d?q=80&w=800', 'Dal Kolhapuri / Dal Khichadi', '₹170 - ₹200', 'Veg', 'Spicy lentil preparation or the ultimate soothing comfort food: Rice and dal cooked together with a fragrant tadka.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?q=80&w=400" alt="Dal Khichadi" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Dal Kolhapuri / Khichadi</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">₹170 - ₹200</p>
+                    </div>
+                </div>
+
+                <!-- Breads Section -->
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=800', 'Tandoori Roti / Butter Roti', '₹20 - ₹25', 'Veg', 'Freshly baked whole wheat flatbread from the tandoor, served plain or brushed with butter.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=400" alt="Tandoori Roti" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Tandoori Roti / Butter Roti</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">₹20 - ₹25</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=800', 'Naan / Butter Naan / Garlic Naan', '₹40 - ₹110', 'Veg', 'Soft and fluffy leavened bread, cooked in the tandoor. Available plain, buttered, or topped with roasted garlic.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=400" alt="Garlic Naan" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Naan / Butter / Garlic Naan</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">₹40 - ₹110</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=800', 'Laccha Paratha / Kulcha Paratha', '₹40 - ₹60', 'Veg', 'Multi-layered, flaky, and buttery wheat flatbreads. Perfect to scoop up our rich gravies.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=400" alt="Laccha Paratha" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Laccha / Kulcha Paratha</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">₹40 - ₹60</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=800', 'Premium Cheese Naan / Kulcha', '₹120 - ₹130', 'Veg', 'Indulgent breads generously stuffed with gooey melting cheese. Available with garlic or paneer stuffing as well.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=400" alt="Cheese Naan" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Cheese Naan / Kulcha</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">₹120 - ₹130</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=800', 'Roasted / Masala Papad', '₹30 - ₹60', 'Veg', 'The quintessential crunchy Indian meal starter. Plain roasted or generously topped with chopped onions, tomatoes, and chaat masala.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=400" alt="Masala Papad" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Roasted / Masala Papad</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">₹30 - ₹60</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISH DETAIL MODAL (Pop-up system triggered by JavaScript) -->
+    <div id="dishModal" class="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-img-wrapper">
+                <img id="modalImg" src="" alt="Dish Full Image">
+            </div>
+            <div class="modal-info">
+                <div class="modal-title-row">
+                    <h2 id="modalTitle">Dish Name</h2>
+                    <div id="modalDietIcon" class="diet-indicator"></div>
+                </div>
+                <h3 id="modalPrice" class="gold-text">₹0</h3>
+                <div class="modal-divider"></div>
+                <p id="modalDesc">Dish description.</p>
+                <button class="btn-primary full-width" onclick="closeModal()">Close Window</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOATING ACTION BUTTONS -->
+    <a href="https://wa.me/919044449969?text=Hello%20Indian%20Food%20Forest,%20I%20have%20an%20enquiry!" class="floating-btn whatsapp-float" target="_blank" aria-label="WhatsApp Us">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <button id="backToTop" class="floating-btn back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- FOOTER SECTION -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-widget about-widget">
+                <h3 class="footer-logo">INDIAN <span class="gold-text">FOOD FOREST</span></h3>
+                <p>A place where Taste, Tradition & Togetherness come alive. Join us for a memorable dining experience.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/indianfoodforest" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-widget links-widget">
+                <h4>Quick Menu</h4>
+                <ul>
+                    <li><a href="about.html"><i class="fas fa-angle-right"></i> Our Story</a></li>
+                    <li><a href="menu-starters.html"><i class="fas fa-angle-right"></i> Soups & Starters</a></li>
+                    <li><a href="menu-indian.html"><i class="fas fa-angle-right"></i> Main Course</a></li>
+                    <li><a href="contact.html"><i class="fas fa-angle-right"></i> Table Reservation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-widget contact-widget">
+                <h4>Reach Us</h4>
+                <ul class="contact-info">
+                    <li><a href="https://maps.app.goo.gl/placeholder" target="_blank"><i class="fas fa-map-marker-alt"></i> Shop No. 50, Ramnagar Gate, MIDC Road, Thane - 400708</a></li>
+                    <li><a href="tel:+919044449969"><i class="fas fa-phone-alt"></i> +91 9044449969 / 9137769044</a></li>
+                    <li><a href="mailto:indianfoodforest2025@gmail.com"><i class="fas fa-envelope"></i> indianfoodforest2025@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Indian Food Forest. All Rights Reserved. | <a href="contact.html">Support: +91 7304301858</a></p>
+        </div>
+    </footer>
+
+    <!-- LINK TO JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
