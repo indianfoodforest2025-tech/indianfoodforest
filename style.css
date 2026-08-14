@@ -265,7 +265,7 @@ ul {
 .btn-large { padding: 14px 32px; font-size: 1rem; }
 .full-width { width: 100%; text-align: center; }
 
-/* --- Hero Section & Page Headers --- */
+/* --- Hero Section & Page Headers (Fixed Overlap Issue) --- */
 .hero, .page-header {
     position: relative;
     display: flex;
@@ -275,19 +275,25 @@ ul {
 }
 
 .hero { height: 100vh; min-height: 600px; }
-.page-header { height: 40vh; min-height: 300px; }
+.page-header { 
+    padding: 80px 0; 
+    min-height: 300px;
+    background-color: var(--bg-dark);
+    background-size: cover;
+    background-position: center;
+}
 
-.hero-bg-image, .about-bg, .menu-bg, .contact-bg {
+.hero-bg-image {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Parallax Effect */
+    background-attachment: fixed;
     z-index: -2;
+    background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1920');
 }
 
-/* You can replace these URLs with your actual high-res restaurant images later */
-.hero-bg-image { background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1920'); }
+.about-bg { background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1920'); }
 .menu-bg { background-image: url('https://images.unsplash.com/photo-1414235077428-338988a2e8c0?q=80&w=1920'); }
 .contact-bg { background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1920'); }
 
@@ -355,7 +361,7 @@ ul {
 
 /* --- Sections & Typography --- */
 .section-padding { padding: 80px 0; }
-.bg-dark { background-color: #080f0c; } /* Alternate dark bg */
+.bg-dark { background-color: #080f0c; }
 
 .section-subtitle {
     font-family: var(--font-heading);
@@ -377,6 +383,11 @@ ul {
     background: var(--gold);
     margin: 0 auto 30px;
     border-radius: 2px;
+}
+
+/* --- Category Navigation Offset Fix --- */
+.menu-section {
+    scroll-margin-top: 130px;
 }
 
 /* --- The Menu Grid System --- */
@@ -405,97 +416,63 @@ ul {
 
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
     margin-top: 40px;
+}
+
+/* --- Professional Text-Only Menu Card Design (No Broken Images) --- */
+.menu-card .card-img {
+    display: none !important;
 }
 
 .menu-card {
     background: var(--bg-card);
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 10px;
+    padding: 18px 20px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
     transition: var(--transition);
     cursor: pointer;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
 .menu-card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(212, 175, 55, 0.5);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    transform: translateY(-3px);
+    border-color: var(--gold);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.15);
 }
 
-.card-img {
-    position: relative;
-    width: 100%;
-    padding-top: 65%; /* Aspect Ratio */
-    overflow: hidden;
-}
-
-.card-img img {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.menu-card:hover .card-img img {
-    transform: scale(1.1);
-}
-
-.overlay-zoom {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(0,0,0,0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: var(--transition);
-}
-
-.overlay-zoom i {
-    color: var(--text-light);
-    font-size: 2rem;
-    background: rgba(212, 175, 55, 0.8);
-    width: 50px; height: 50px;
-    line-height: 50px;
-    text-align: center;
-    border-radius: 50%;
-}
-
-.menu-card:hover .overlay-zoom { opacity: 1; }
-
-.card-content {
-    padding: 20px;
-    flex-grow: 1;
+.menu-card .card-content {
+    padding: 0 !important;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 10px;
 }
 
-.card-header {
+.menu-card .card-header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 10px;
+    align-items: center;
+    margin-bottom: 0;
 }
 
-.card-header h3 {
-    font-size: 1.1rem;
+.menu-card .card-header h3 {
+    font-family: var(--font-body);
+    font-size: 1.05rem;
     font-weight: 600;
-    line-height: 1.4;
-    padding-right: 10px;
+    color: var(--text-light);
+    padding-right: 15px;
 }
 
 .diet-indicator {
     min-width: 16px; height: 16px;
     border: 1px solid #fff;
-    display: inline-block;
     display: flex; justify-content: center; align-items: center;
     padding: 2px;
+    flex-shrink: 0;
 }
 .diet-indicator::after {
     content: ''; width: 8px; height: 8px; border-radius: 50%;
@@ -505,11 +482,31 @@ ul {
 .diet-indicator.non-veg { border-color: var(--nonveg-red); }
 .diet-indicator.non-veg::after { background-color: var(--nonveg-red); }
 
-.price {
+.menu-card .price {
     font-family: var(--font-heading);
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-weight: 700;
-    margin-top: auto;
+    color: var(--gold);
+    border-top: 1px dashed rgba(255, 255, 255, 0.08);
+    padding-top: 8px;
+    margin-top: 2px;
+}
+
+/* --- Category Banner Image Styling --- */
+.category-banner {
+    width: 100%;
+    max-width: 700px;
+    height: 220px;
+    margin: 0 auto 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid rgba(212, 175, 55, 0.3);
+}
+
+.category-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* --- The Magical Pop-up Modal (Glassmorphism) --- */
@@ -535,7 +532,7 @@ ul {
 .modal-box {
     background: var(--bg-card);
     width: 90%;
-    max-width: 500px;
+    max-width: 450px;
     border-radius: 15px;
     overflow: hidden;
     position: relative;
@@ -563,15 +560,10 @@ ul {
 .modal-close:hover { background: var(--gold); color: #000; }
 
 .modal-img-wrapper {
-    width: 100%;
-    height: 250px;
-}
-.modal-img-wrapper img {
-    width: 100%; height: 100%;
-    object-fit: cover;
+    display: none !important; /* Hides image in modal for text-only mode */
 }
 
-.modal-info { padding: 25px; }
+.modal-info { padding: 30px; }
 
 .modal-title-row {
     display: flex;
@@ -582,11 +574,11 @@ ul {
 
 .modal-title-row h2 {
     font-family: var(--font-heading);
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 #modalPrice {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-bottom: 15px;
 }
 
@@ -694,7 +686,7 @@ input:focus, select:focus, textarea:focus {
 }
 
 .whatsapp-float {
-    bottom: 30px; left: 30px; /* Kept on left to avoid thumb clash */
+    bottom: 30px; left: 30px;
     background-color: #25d366;
 }
 .whatsapp-float:hover { background-color: #1ebe57; transform: scale(1.1); }
@@ -775,7 +767,6 @@ input:focus, select:focus, textarea:focus {
 @media (max-width: 768px) {
     .hide-mobile { display: none; }
     
-    /* Mobile Navbar logic */
     .hamburger { display: block; }
     .nav-links {
         position: fixed;
@@ -794,7 +785,6 @@ input:focus, select:focus, textarea:focus {
     .dropdown:hover .dropdown-menu { display: block; }
     .nav-action { margin: 20px 0 0 0; }
     
-    /* Typography adjust */
     .hero-title { font-size: 2.8rem; }
     .section-title { font-size: 2.2rem; }
     .page-title { font-size: 2.8rem; }
@@ -809,7 +799,6 @@ input:focus, select:focus, textarea:focus {
     .hero-btn-group { display: flex; flex-direction: column; }
     .hero-btn-group a { margin: 10px 0; }
     
-    /* Modal adjustment for small phones (Bottom Sheet style) */
     .modal-box {
         margin-top: auto;
         border-radius: 20px 20px 0 0;
@@ -818,8 +807,6 @@ input:focus, select:focus, textarea:focus {
         transform: translateY(100%);
     }
     .modal-overlay { align-items: flex-end; }
-    .modal-img-wrapper { height: 200px; }
-    .modal-title-row h2 { font-size: 1.3rem; }
     
     .whatsapp-float { width: 50px; height: 50px; font-size: 1.5rem; bottom: 20px; left: 20px; }
     .back-to-top { width: 45px; height: 45px; font-size: 1.2rem; bottom: 20px; right: 20px; }
