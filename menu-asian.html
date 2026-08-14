@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Asian Delights | Indian Food Forest</title>
+    <meta name="description" content="Savor the finest Pan-Asian flavors. From handcrafted momos to Thai curries, wok-tossed noodles, and exotic pot rice at Indian Food Forest.">
+    
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="loader-logo">
+            <h2>IFF</h2>
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <!-- TOP INFO BAR -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-left">
+                <span><i class="far fa-clock"></i> 12:00 PM - 02:00 AM</span>
+                <span class="hide-mobile"><i class="fas fa-map-marker-alt"></i> Thane Belapur MIDC Road, Thane</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="https://www.instagram.com/indianfoodforest" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:indianfoodforest2025@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">
+                <span class="brand-name">INDIAN <span class="gold-text">FOOD FOREST</span></span>
+            </a>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <nav class="nav-links" id="nav-links">
+                <ul class="menu-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#menu" class="active">Our Menu <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="menu-starters.html">Soups & Starters</a></li>
+                            <li><a href="menu-tandoori.html">Tandoori & Kebabs</a></li>
+                            <li><a href="menu-asian.html" class="active">Asian Delights</a></li>
+                            <li><a href="menu-indian.html">The Indian Kitchen</a></li>
+                            <li><a href="menu-biryani.html">Rice E Dastaan (Biryani)</a></li>
+                            <li><a href="menu-specials.html">Chef's Specials</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-action">
+                    <a href="tel:+919044449969" class="btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header menu-bg">
+        <div class="header-overlay"></div>
+        <div class="container text-center">
+            <h1 class="page-title">Asian <span class="gold-text">Delights</span></h1>
+            <p class="breadcrumbs"><a href="index.html">Home</a> <i class="fas fa-angle-right"></i> Menu <i class="fas fa-angle-right"></i> Asian</p>
+        </div>
+    </section>
+
+    <!-- CATEGORY JUMP MENU -->
+    <div class="category-nav">
+        <div class="container text-center">
+            <a href="#momos" class="cat-btn">Momos</a>
+            <a href="#asian-gravy" class="cat-btn">Asian Gravy</a>
+            <a href="#rice-noodles" class="cat-btn">Rice & Noodles</a>
+            <a href="#pot-rice" class="cat-btn">Pot Rice</a>
+        </div>
+    </div>
+
+    <!-- MOMOS SECTION -->
+    <section id="momos" class="menu-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Handcrafted <span class="gold-text">Momos</span></h2>
+                <div class="heading-divider"></div>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Veg & Chicken Momos Grouped -->
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1625220194771-7ebdea0b70b9?q=80&w=800', 'Classic Steam / Fried Momos', 'Veg ₹120-140 / Chi ₹130-140', 'Veg/Non-Veg', 'Delicate dumplings filled with finely chopped veggies or juicy minced chicken, served with fiery garlic dip.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1625220194771-7ebdea0b70b9?q=80&w=400" alt="Steam Momos" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Classic Steam / Fried Momos</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">Veg ₹120 / Chi ₹130 (Steam)</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1625220194771-7ebdea0b70b9?q=80&w=800', 'Cheese Momos (Steam/Fried)', 'Veg ₹150-160 / Chi ₹150-160', 'Veg/Non-Veg', 'Rich and gooey! Momos loaded with melting cheese blended perfectly with vegetables or chicken.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1625220194771-7ebdea0b70b9?q=80&w=400" alt="Cheese Momos" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Cheese Momos</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">₹150 - ₹160</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=800', 'Chilli / Schezwan Tossed Momos', 'Veg ₹200 / Chi ₹200', 'Veg/Non-Veg', 'Crispy fried momos wok-tossed in spicy garlic chilli sauce or bold schezwan gravy.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=400" alt="Tossed Momos" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Chilli / Schezwan Tossed</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">₹200</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=800', 'Cheese Chilli / Kung Pao Tossed', 'Veg ₹220-240 / Chi ₹220-240', 'Veg/Non-Veg', 'Premium momos tossed with cheesy spicy sauce or the iconic roasted peanut Kung Pao sauce.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=400" alt="Premium Tossed Momos" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Premium Tossed Momos</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">₹220 - ₹240</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ASIAN MAIN COURSE (GRAVY) SECTION -->
+    <section id="asian-gravy" class="menu-section section-padding bg-dark">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Asian <span class="gold-text">Main Course</span> (Gravy)</h2>
+                <div class="heading-divider"></div>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1585032226651-759b368d7246?q=80&w=800', 'Schezwan / Manchurian Gravy', 'Veg ₹220 / Chi ₹250 / Seafood ₹300', 'Veg/Non-Veg', 'Your choice of protein in the classic dark soy Manchurian sauce or spicy garlic Schezwan gravy.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?q=80&w=400" alt="Manchurian Gravy" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Schezwan / Manchurian</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">Starts from ₹220</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1585032226651-759b368d7246?q=80&w=800', 'Hot Garlic / Chilli Garlic Gravy', 'Veg ₹220 / Chi ₹250 / Seafood ₹300', 'Veg/Non-Veg', 'A robust, pungent, and extremely flavorful gravy loaded with crushed garlic and fresh green chillies.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?q=80&w=400" alt="Hot Garlic Gravy" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Hot & Chilli Garlic Gravy</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">Starts from ₹220</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1559314809-0d155014e29e?q=80&w=800', 'Thai Red / Green Curry', 'Veg ₹250 / Chi ₹300 / Seafood ₹350', 'Veg/Non-Veg', 'Authentic, aromatic Thai curries simmered in rich coconut milk with exotic herbs, lemongrass, and galangal.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1559314809-0d155014e29e?q=80&w=400" alt="Thai Green Curry" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Thai Red / Green Curry</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">Starts from ₹250</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1559314809-0d155014e29e?q=80&w=800', 'Kung Pao / Malaysian / Burmese Curry', 'Veg ₹250 / Chi ₹300 / Seafood ₹350', 'Veg/Non-Veg', 'Explore exotic borders! Savor the peanut-rich Kung Pao, the complex Malaysian spices, or the comforting Burmese broth.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1559314809-0d155014e29e?q=80&w=400" alt="Exotic Asian Curries" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Exotic Asian Curries</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">Starts from ₹250</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RICE & NOODLES SECTION -->
+    <section id="rice-noodles" class="menu-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Wok Tossed <span class="gold-text">Rice & Noodles</span></h2>
+                <div class="heading-divider"></div>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Noodles Collection -->
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1585032226651-759b368d7246?q=80&w=800', 'Hakka / Schezwan Noodles', 'Veg ₹170-180 / Chi ₹190-200', 'Veg/Non-Veg', 'Classic wok-tossed noodles with shredded vegetables, soy sauce, or spicy schezwan paste.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?q=80&w=400" alt="Hakka Noodles" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Hakka / Schezwan Noodles</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">Starts from ₹170</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1585032226651-759b368d7246?q=80&w=800', 'Burnt Garlic / Mushroom Noodles', 'Veg ₹190-200 / Chi ₹200-210', 'Veg/Non-Veg', 'Noodles tossed with roasted, smoky burnt garlic bits or earthy fresh mushrooms.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?q=80&w=400" alt="Burnt Garlic Noodles" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Burnt Garlic / Mushroom Noodles</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">Starts from ₹190</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1585032226651-759b368d7246?q=80&w=800', 'Japanese Udon / Shanghai Noodles', 'Veg ₹190 / Chi ₹210', 'Veg/Non-Veg', 'Thick, chewy Japanese Udon noodles or sweet and savory Shanghai-style preparation.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?q=80&w=400" alt="Udon Noodles" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Japanese Udon / Shanghai</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">Starts from ₹190</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1585032226651-759b368d7246?q=80&w=800', 'Manchurian / Triple Schezwan Noodles', 'Veg ₹210-220 / Chi ₹240', 'Veg/Non-Veg', 'A complete meal! Noodles served with a rich side-gravy of Manchurian or Triple Schezwan sauce with a fried egg (in non-veg).')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?q=80&w=400" alt="Triple Schezwan" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Triple Schezwan Noodles</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">Starts from ₹210</p>
+                    </div>
+                </div>
+
+                <!-- Rice Collection -->
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=800', 'Classic / Schezwan Fried Rice', 'Veg ₹170-180 / Chi ₹190-200', 'Veg/Non-Veg', 'Fluffy basmati grains wok-tossed with fresh veggies, soy sauce, or spicy schezwan.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=400" alt="Fried Rice" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Classic / Schezwan Fried Rice</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">Starts from ₹170</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=800', 'Cheese / Paneer / Mushroom Rice', 'Veg ₹190-220 / Chi ₹210-240', 'Veg/Non-Veg', 'Elevate your rice with melting cheese, soft paneer cubes, or earthy mushrooms.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=400" alt="Paneer Fried Rice" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Premium Toppings Rice</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">Starts from ₹190</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=800', 'Triple Schezwan / Manchurian Rice', 'Veg ₹220 / Chi ₹240', 'Veg/Non-Veg', 'The all-time favorite combo. Spicy fried rice served with a thick, flavor-packed side gravy.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=400" alt="Triple Schezwan Rice" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Triple Schezwan Rice</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">Starts from ₹220</p>
+                    </div>
+                </div>
+
+                <!-- Special High-End Rice -->
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=800', 'Specialty Rice: 1000 / Chopper / Boxer / Sherpa', 'Veg ₹280-300 / Chi ₹300-310', 'Veg/Non-Veg', 'Our Chef\'s grand creations. Large portions of uniquely flavored rice, loaded with exotic veggies, sauces, and premium meats.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=400" alt="Specialty Exotic Rice" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Exotic Specialty Rice Series</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">Starts from ₹280</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POT RICE SECTION -->
+    <section id="pot-rice" class="menu-section section-padding bg-dark">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Aromatic <span class="gold-text">Pot Rice</span></h2>
+                <div class="heading-divider"></div>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=800', 'Manchurian / Schezwan Pot Rice', 'Veg ₹280 / Chi ₹300 / Seafood ₹350', 'Veg/Non-Veg', 'Flavorful rice layered in a traditional pot, topped with a rich, sizzling Manchurian or Schezwan gravy.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=400" alt="Manchurian Pot Rice" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Manchurian / Schezwan Pot Rice</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">Starts from ₹280</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=800', 'Thai Red / Green Pot Rice', 'Veg ₹280 / Chi ₹300 / Seafood ₹350', 'Veg/Non-Veg', 'A beautifully aromatic pot of steamed rice bathed in authentic coconut-based Thai curry.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=400" alt="Thai Pot Rice" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Thai Red / Green Pot Rice</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">Starts from ₹280</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=800', 'Hunan / Malaysian / Burmese Pot Rice', 'Veg ₹280 / Chi ₹300 / Seafood ₹350', 'Veg/Non-Veg', 'Embark on a culinary tour across Asia. Fragrant rice pots topped with exotic, complex gravies.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=400" alt="Malaysian Pot Rice" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Exotic Asian Pot Rice</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">Starts from ₹280</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=800', 'Barbeque Pot Rice', 'Veg ₹280 / Chi ₹300 / Seafood ₹350', 'Veg/Non-Veg', 'A rich, smoky, and slightly sweet barbeque gravy layered generously over hot rice in a clay pot.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=400" alt="Barbeque Pot Rice" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Barbeque Pot Rice</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">Starts from ₹280</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISH DETAIL MODAL (Pop-up system triggered by JavaScript) -->
+    <div id="dishModal" class="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-img-wrapper">
+                <img id="modalImg" src="" alt="Dish Full Image">
+            </div>
+            <div class="modal-info">
+                <div class="modal-title-row">
+                    <h2 id="modalTitle">Dish Name</h2>
+                    <div id="modalDietIcon" class="diet-indicator"></div>
+                </div>
+                <h3 id="modalPrice" class="gold-text">₹0</h3>
+                <div class="modal-divider"></div>
+                <p id="modalDesc">Dish description.</p>
+                <button class="btn-primary full-width" onclick="closeModal()">Close Window</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOATING ACTION BUTTONS -->
+    <a href="https://wa.me/919044449969?text=Hello%20Indian%20Food%20Forest,%20I%20have%20an%20enquiry!" class="floating-btn whatsapp-float" target="_blank" aria-label="WhatsApp Us">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <button id="backToTop" class="floating-btn back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- FOOTER SECTION -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-widget about-widget">
+                <h3 class="footer-logo">INDIAN <span class="gold-text">FOOD FOREST</span></h3>
+                <p>A place where Taste, Tradition & Togetherness come alive. Join us for a memorable dining experience.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/indianfoodforest" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-widget links-widget">
+                <h4>Quick Menu</h4>
+                <ul>
+                    <li><a href="about.html"><i class="fas fa-angle-right"></i> Our Story</a></li>
+                    <li><a href="menu-starters.html"><i class="fas fa-angle-right"></i> Soups & Starters</a></li>
+                    <li><a href="menu-indian.html"><i class="fas fa-angle-right"></i> Main Course</a></li>
+                    <li><a href="contact.html"><i class="fas fa-angle-right"></i> Table Reservation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-widget contact-widget">
+                <h4>Reach Us</h4>
+                <ul class="contact-info">
+                    <li><a href="https://maps.app.goo.gl/placeholder" target="_blank"><i class="fas fa-map-marker-alt"></i> Shop No. 50, Ramnagar Gate, MIDC Road, Thane - 400708</a></li>
+                    <li><a href="tel:+919044449969"><i class="fas fa-phone-alt"></i> +91 9044449969 / 9137769044</a></li>
+                    <li><a href="mailto:indianfoodforest2025@gmail.com"><i class="fas fa-envelope"></i> indianfoodforest2025@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Indian Food Forest. All Rights Reserved. | <a href="contact.html">Support: +91 7304301858</a></p>
+        </div>
+    </footer>
+
+    <!-- LINK TO JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
