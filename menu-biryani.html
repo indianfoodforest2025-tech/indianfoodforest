@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Rice E Dastaan (Biryani) | Indian Food Forest</title>
+    <meta name="description" content="Experience the royal Rice E Dastaan. Premium Biryanis, Grand Kepsa Platters, and Bulk Party Orders at Indian Food Forest, Thane.">
+    
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="loader-logo">
+            <h2>IFF</h2>
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <!-- TOP INFO BAR -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-left">
+                <span><i class="far fa-clock"></i> 12:00 PM - 02:00 AM</span>
+                <span class="hide-mobile"><i class="fas fa-map-marker-alt"></i> Thane Belapur MIDC Road, Thane</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="https://www.instagram.com/indianfoodforest" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:indianfoodforest2025@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">
+                <span class="brand-name">INDIAN <span class="gold-text">FOOD FOREST</span></span>
+            </a>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <nav class="nav-links" id="nav-links">
+                <ul class="menu-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#menu" class="active">Our Menu <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="menu-starters.html">Soups & Starters</a></li>
+                            <li><a href="menu-tandoori.html">Tandoori & Kebabs</a></li>
+                            <li><a href="menu-asian.html">Asian Delights</a></li>
+                            <li><a href="menu-indian.html">The Indian Kitchen</a></li>
+                            <li><a href="menu-biryani.html" class="active">Rice E Dastaan (Biryani)</a></li>
+                            <li><a href="menu-specials.html">Chef's Specials</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-action">
+                    <a href="tel:+919044449969" class="btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header menu-bg">
+        <div class="header-overlay"></div>
+        <div class="container text-center">
+            <h1 class="page-title">Rice E <span class="gold-text">Dastaan</span></h1>
+            <p class="breadcrumbs"><a href="index.html">Home</a> <i class="fas fa-angle-right"></i> Menu <i class="fas fa-angle-right"></i> Biryani & Kepsa</p>
+        </div>
+    </section>
+
+    <!-- CATEGORY JUMP MENU -->
+    <div class="category-nav">
+        <div class="container text-center">
+            <a href="#veg-biryani" class="cat-btn">Veg Biryani</a>
+            <a href="#nonveg-biryani" class="cat-btn">Non-Veg Biryani</a>
+            <a href="#kepsa-platters" class="cat-btn">Grand Kepsa</a>
+            <a href="#bulk-orders" class="cat-btn">1Kg Party Orders</a>
+        </div>
+    </div>
+
+    <!-- VEG & EGG BIRYANI SECTION -->
+    <section id="veg-biryani" class="menu-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Vegetarian & Egg <span class="gold-text">Biryani</span></h2>
+                <div class="heading-divider"></div>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=800', 'Veg Biryani / Tawa Biryani', '₹200 - ₹220', 'Veg', 'A fragrant medley of long-grain basmati rice, assorted fresh garden vegetables, and aromatic whole spices slowly cooked to perfection.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=400" alt="Veg Biryani" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Veg / Tawa Biryani</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">₹200 - ₹220</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=800', 'Paneer Tikka / Creamy Biryani', '₹220 - ₹300', 'Veg', 'Premium cottage cheese cubes marinated in rich tandoori spices or velvety cream, layered with saffron-infused rice.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=400" alt="Paneer Biryani" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Paneer Tikka / Creamy Biryani</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">₹220 - ₹300</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=800', 'Egg / Egg Tawa Biryani', '₹200 - ₹220', 'Non-Veg', 'Boiled eggs roasted with Indian spices and layered with long-grain fragrant rice, cooked dum style.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=400" alt="Egg Biryani" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Egg / Egg Tawa Biryani</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">₹200 - ₹220</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=800', 'Jeera Rice / Steam Rice', '₹70 - ₹80', 'Veg', 'The perfect side. Fluffy steamed white basmati rice or delicately tempered with cumin seeds and pure ghee.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=400" alt="Jeera Rice" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Jeera Rice / Steam Rice</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">₹70 - ₹80</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NON-VEG BIRYANI SECTION -->
+    <section id="nonveg-biryani" class="menu-section section-padding bg-dark">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Signature <span class="gold-text">Chicken & Seafood</span> Biryani</h2>
+                <div class="heading-divider"></div>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?q=80&w=800', 'Chicken Tawa Biryani', '₹220', 'Non-Veg', 'A street-style masterpiece! Spicy chicken and rice wok-tossed on a large iron tawa with robust flavors.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?q=80&w=400" alt="Chicken Tawa Biryani" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Chicken Tawa Biryani</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">₹220</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?q=80&w=800', 'Chicken Tikka Biryani', '₹300', 'Non-Veg', 'Smoky, charcoal-grilled boneless chicken tikka layered with rich masala gravy and long-grain basmati rice.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?q=80&w=400" alt="Chicken Tikka Biryani" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Chicken Tikka Biryani</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">₹300</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?q=80&w=800', 'Chicken Indian Creamy Biryani', 'Half ₹220 / Full ₹1100', 'Non-Veg', 'Our Chef\'s ultra-premium creation. A luxuriously rich and creamy biryani that melts in your mouth, available in half or a grand full portion.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?q=80&w=400" alt="Creamy Biryani" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Chi. Indian Creamy Biryani</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">Half ₹220 / Full ₹1100</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?q=80&w=800', 'Prawns Biryani', '₹300', 'Non-Veg', 'A coastal delight! Fresh, succulent prawns marinated in aromatic spices and slow-cooked with basmati rice.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?q=80&w=400" alt="Prawns Biryani" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Prawns Biryani</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">₹300</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEPSA PLATTERS SECTION -->
+    <section id="kepsa-platters" class="menu-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">The Grand <span class="gold-text">Kepsa Platters</span></h2>
+                <div class="heading-divider"></div>
+                <p style="color: var(--text-light); max-width: 600px; margin: 0 auto 30px;">An ultimate royal feast! A massive platter of flavored rice topped with generous portions of rich gravy, dry starters, and garnishing. Perfect for sharing.</p>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Veg Kepsa -->
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1626804475297-41609ae0bc44?q=80&w=800', 'Paneer Chilly / Crispy Kepsa', 'Half ₹600 / Full ₹800', 'Veg', 'A massive platter of fragrant rice topped with large portions of Indo-Chinese Paneer Chilly or Paneer Crispy, along with thick gravy.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1626804475297-41609ae0bc44?q=80&w=400" alt="Paneer Kepsa" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Paneer Chilly / Crispy Kepsa</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">Half ₹600 / Full ₹800</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1626804475297-41609ae0bc44?q=80&w=800', 'Paneer Tikka Kepsa', 'Half ₹600 / Full ₹900', 'Veg', 'A smoky vegetarian feast! Tandoori paneer tikka pieces and rich masala loaded over a bed of premium flavored rice.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1626804475297-41609ae0bc44?q=80&w=400" alt="Paneer Tikka Kepsa" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Paneer Tikka Kepsa</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">Half ₹600 / Full ₹900</p>
+                    </div>
+                </div>
+
+                <!-- Non-Veg Kepsa -->
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1626804475297-41609ae0bc44?q=80&w=800', 'Chicken Tandoori Kepsa', 'Half ₹700 / Full ₹1000', 'Non-Veg', 'The King of Kepsa! Whole roasted Tandoori Chicken chopped and served over a mountain of flavorful rice and thick robust gravy.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1626804475297-41609ae0bc44?q=80&w=400" alt="Chicken Tandoori Kepsa" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Chicken Tandoori Kepsa</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">Half ₹700 / Full ₹1000</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1626804475297-41609ae0bc44?q=80&w=800', 'Chi. Lollypop / Crispy / Chilli Kepsa', 'Half ₹600 / Full ₹800', 'Non-Veg', 'Indo-Chinese lovers paradise. A grand platter loaded with fried rice/noodles, topped heavily with Chicken Lollypop, Crispy, or Chilli and their sauces.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1626804475297-41609ae0bc44?q=80&w=400" alt="Indo-Chinese Kepsa" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Chi. Lollypop / Chilli Kepsa</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">Half ₹600 / Full ₹800</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1626804475297-41609ae0bc44?q=80&w=800', 'Chicken Tikka Kepsa', 'Half ₹600 / Full ₹900', 'Non-Veg', 'Boneless, smoky chicken tikka chunks smothered in thick masala gravy, resting on a grand bed of saffron rice.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1626804475297-41609ae0bc44?q=80&w=400" alt="Chicken Tikka Kepsa" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Chicken Tikka Kepsa</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">Half ₹600 / Full ₹900</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1626804475297-41609ae0bc44?q=80&w=800', 'Chi. Shifu Special Kepsa', '₹1100 (Full)', 'Non-Veg', 'The ultimate Chef\'s signature feast. A massive spread of exotic flavors, multiple starters, and a blend of secret gravies and rice.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1626804475297-41609ae0bc44?q=80&w=400" alt="Shifu Special Kepsa" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Chi. Shifu Special Kepsa</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">₹1100 (Full Platter)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1KG BULK PARTY ORDERS -->
+    <section id="bulk-orders" class="menu-section section-padding bg-dark">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Bulk / Party Orders <span class="gold-text">(1 KG)</span></h2>
+                <div class="heading-divider"></div>
+                <p style="color: var(--text-light); max-width: 600px; margin: 0 auto 30px;">Perfect for family gatherings, house parties, and festivals. Pure authentic taste delivered in bulk quantities.</p>
+            </div>
+
+            <div class="menu-grid" style="justify-content: center;">
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=800', 'Veg / Paneer Dum Biryani (1 Kg)', '₹900', 'Veg', '1 Kilogram of pure indulgence. Slowly cooked dum biryani packed with fresh vegetables, premium paneer, and authentic whole spices.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=400" alt="1 Kg Paneer Dum Biryani" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Veg / Paneer Dum Biryani (1 Kg)</h3><span class="diet-indicator veg"></span></div>
+                        <p class="price gold-text">₹900</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?q=80&w=800', 'Chicken Dum Biryani (1 Kg)', '₹900', 'Non-Veg', '1 Kilogram of traditional, slow-cooked chicken dum biryani. Tender meat, fragrant basmati, and the rich aroma of saffron and ghee.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?q=80&w=400" alt="1 Kg Chicken Dum Biryani" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Chicken Dum Biryani (1 Kg)</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">₹900</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=800', 'Burmese Biryani (1 Kg)', 'Veg ₹1300 / Chicken ₹1300', 'Veg/Non-Veg', '1 Kilogram of an exotic Asian twist to the classic! Highly flavorful Burmese style biryani cooked with complex spices and herbs.')">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=400" alt="1 Kg Burmese Biryani" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                    <div class="card-content">
+                        <div class="card-header"><h3>Burmese Biryani (1 Kg)</h3><span class="diet-indicator non-veg"></span></div>
+                        <p class="price gold-text">Veg ₹1300 / Chi ₹1300</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 40px;">
+                <p style="color: #fff; margin-bottom: 20px;">For larger catering orders (above 2kg) for Weddings & Birthdays:</p>
+                <a href="contact.html" class="btn-primary btn-large">Enquire for Catering</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISH DETAIL MODAL (Pop-up system triggered by JavaScript) -->
+    <div id="dishModal" class="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-img-wrapper">
+                <img id="modalImg" src="" alt="Dish Full Image">
+            </div>
+            <div class="modal-info">
+                <div class="modal-title-row">
+                    <h2 id="modalTitle">Dish Name</h2>
+                    <div id="modalDietIcon" class="diet-indicator"></div>
+                </div>
+                <h3 id="modalPrice" class="gold-text">₹0</h3>
+                <div class="modal-divider"></div>
+                <p id="modalDesc">Dish description.</p>
+                <button class="btn-primary full-width" onclick="closeModal()">Close Window</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOATING ACTION BUTTONS -->
+    <a href="https://wa.me/919044449969?text=Hello%20Indian%20Food%20Forest,%20I%20have%20an%20enquiry!" class="floating-btn whatsapp-float" target="_blank" aria-label="WhatsApp Us">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <button id="backToTop" class="floating-btn back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- FOOTER SECTION -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-widget about-widget">
+                <h3 class="footer-logo">INDIAN <span class="gold-text">FOOD FOREST</span></h3>
+                <p>A place where Taste, Tradition & Togetherness come alive. Join us for a memorable dining experience.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/indianfoodforest" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-widget links-widget">
+                <h4>Quick Menu</h4>
+                <ul>
+                    <li><a href="about.html"><i class="fas fa-angle-right"></i> Our Story</a></li>
+                    <li><a href="menu-starters.html"><i class="fas fa-angle-right"></i> Soups & Starters</a></li>
+                    <li><a href="menu-indian.html"><i class="fas fa-angle-right"></i> Main Course</a></li>
+                    <li><a href="contact.html"><i class="fas fa-angle-right"></i> Table Reservation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-widget contact-widget">
+                <h4>Reach Us</h4>
+                <ul class="contact-info">
+                    <li><a href="https://maps.app.goo.gl/placeholder" target="_blank"><i class="fas fa-map-marker-alt"></i> Shop No. 50, Ramnagar Gate, MIDC Road, Thane - 400708</a></li>
+                    <li><a href="tel:+919044449969"><i class="fas fa-phone-alt"></i> +91 9044449969 / 9137769044</a></li>
+                    <li><a href="mailto:indianfoodforest2025@gmail.com"><i class="fas fa-envelope"></i> indianfoodforest2025@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Indian Food Forest. All Rights Reserved. | <a href="contact.html">Support: +91 7304301858</a></p>
+        </div>
+    </footer>
+
+    <!-- LINK TO JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
