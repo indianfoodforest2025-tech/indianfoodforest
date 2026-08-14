@@ -265,7 +265,7 @@ ul {
 .btn-large { padding: 14px 32px; font-size: 1rem; }
 .full-width { width: 100%; text-align: center; }
 
-/* --- Hero Section & Page Headers (Using Your Real Interior Photo) --- */
+/* --- Hero Section & Page Headers (Using background.jpeg) --- */
 .hero, .page-header {
     position: relative;
     display: flex;
@@ -289,7 +289,7 @@ ul {
     background-repeat: no-repeat !important;
     background-attachment: fixed;
     z-index: -2;
-    background-image: url('images/interior.jpg.jpeg') !important;
+    background-image: url('images/background.jpeg') !important;
 }
 
 .hero-overlay, .header-overlay {
