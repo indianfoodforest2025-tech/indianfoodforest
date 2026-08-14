@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Indian Food Forest | Premium Dining in Thane</title>
+    <meta name="description" content="Experience the finest Veg & Non-Veg multi-cuisine dishes at Indian Food Forest. Taste, Tradition & Togetherness in every bite. Open till 2 AM.">
+    
+    <!-- Premium Google Fonts: Playfair Display (Royal Headings) & Montserrat (Clean Body Text) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for High-Quality Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PRELOADER (Premium loading screen) -->
+    <div id="preloader">
+        <div class="loader-logo">
+            <h2>IFF</h2>
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <!-- TOP INFO BAR (For Contact & Timings) -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-left">
+                <span><i class="far fa-clock"></i> 12:00 PM - 02:00 AM</span>
+                <span class="hide-mobile"><i class="fas fa-map-marker-alt"></i> Thane Belapur MIDC Road, Thane</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="https://www.instagram.com/indianfoodforest" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:indianfoodforest2025@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION (Glassmorphism effect in CSS) -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">
+                <span class="brand-name">INDIAN <span class="gold-text">FOOD FOREST</span></span>
+            </a>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <nav class="nav-links" id="nav-links">
+                <ul class="menu-list">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    
+                    <!-- Mega Menu Dropdown for Categories -->
+                    <li class="dropdown">
+                        <a href="#menu">Our Menu <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="menu-starters.html">Soups & Starters</a></li>
+                            <li><a href="menu-tandoori.html">Tandoori & Kebabs</a></li>
+                            <li><a href="menu-asian.html">Asian Delights</a></li>
+                            <li><a href="menu-indian.html">The Indian Kitchen</a></li>
+                            <li><a href="menu-biryani.html">Rice E Dastaan (Biryani)</a></li>
+                            <li><a href="menu-specials.html">Chef's Specials</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-action">
+                    <a href="tel:+919044449969" class="btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (Full Screen with Parallax Background) -->
+    <section class="hero" id="home">
+        <div class="hero-bg-image"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="launch-badge">
+                <span>🌟 Celebrating Our Journey 🌟</span>
+            </div>
+            <h3 class="hero-subtitle">Taste, Tradition & Togetherness</h3>
+            <h1 class="hero-title">Welcome To<br><span class="gold-text">Indian Food Forest</span></h1>
+            <p class="hero-desc">Discover a culinary symphony of authentic Indian spices, sizzling tandoors, and exotic Asian flavors in a premium forest-inspired ambiance.</p>
+            <div class="hero-btn-group">
+                <a href="menu-specials.html" class="btn-primary btn-large">View Menu</a>
+                <a href="contact.html" class="btn-secondary btn-large">Book a Table</a>
+            </div>
+        </div>
+        <a href="#about-teaser" class="scroll-down-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- FEATURES SECTION (Why choose us) -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Finest Ingredients</h3>
+                    <p>We use only the freshest, hand-picked ingredients to ensure pure quality in every Veg & Non-Veg dish.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="fas fa-fire"></i></div>
+                    <h3>Master Chefs</h3>
+                    <p>Our culinary experts bring years of traditional cooking techniques straight to your table.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="far fa-moon"></i></div>
+                    <h3>Late Night Cravings</h3>
+                    <p>We are open till 02:00 AM, serving hot, delicious meals to satisfy your midnight hunger.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT TEASER SECTION -->
+    <section class="about-teaser" id="about-teaser">
+        <div class="container">
+            <div class="about-flex">
+                <div class="about-text">
+                    <h4 class="section-subtitle">Our Story</h4>
+                    <h2 class="section-title">A Symphony of <span class="gold-text">Flavors</span></h2>
+                    <p>At Indian Food Forest, we believe that good food creates a good mood and leads to a good life. From our sizzling platters to our rich, aromatic biryanis, every dish is crafted with passion and tradition.</p>
+                    <p>Whether it's a family gathering, a romantic dinner, or a celebration with friends, our elegant ambiance provides the perfect backdrop for your unforgettable moments.</p>
+                    <a href="about.html" class="btn-link">Read Full Story <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="about-image-collage">
+                    <div class="img-wrapper main-img">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=800&auto=format&fit=crop" alt="Restaurant Ambiance" loading="lazy">
+                    </div>
+                    <div class="img-wrapper floating-img">
+                        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?q=80&w=600&auto=format&fit=crop" alt="Delicious Food" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIGNATURE DISHES (Interactive Grid with Pop-up Modals) -->
+    <section class="signature-dishes">
+        <div class="container">
+            <div class="section-header text-center">
+                <h4 class="section-subtitle">Chef's Recommendations</h4>
+                <h2 class="section-title">Our <span class="gold-text">Signature</span> Dishes</h2>
+                <div class="heading-divider"></div>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Dish Item 1 -->
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?q=80&w=1000&auto=format&fit=crop', 'Butter Chicken', '₹300', 'Non-Veg', 'Classic rich and creamy tomato-based gravy, slow-cooked with succulent tandoori chicken pieces. A royal Indian treat.')">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?q=80&w=500&auto=format&fit=crop" alt="Butter Chicken" loading="lazy">
+                        <div class="overlay-zoom"><i class="fas fa-expand"></i></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Butter Chicken</h3>
+                            <span class="diet-indicator non-veg"></span>
+                        </div>
+                        <p class="price gold-text">Starts from ₹300</p>
+                    </div>
+                </div>
+
+                <!-- Dish Item 2 -->
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?q=80&w=1000&auto=format&fit=crop', 'Chicken Tawa Biryani', '₹220', 'Non-Veg', 'Aromatic basmati rice cooked with tender chicken pieces, blended with secret rich spices on a traditional tawa.')">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?q=80&w=500&auto=format&fit=crop" alt="Chicken Tawa Biryani" loading="lazy">
+                        <div class="overlay-zoom"><i class="fas fa-expand"></i></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Chicken Tawa Biryani</h3>
+                            <span class="diet-indicator non-veg"></span>
+                        </div>
+                        <p class="price gold-text">₹220</p>
+                    </div>
+                </div>
+
+                <!-- Dish Item 3 -->
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=1000&auto=format&fit=crop', 'Paneer Tikka Masala', '₹280', 'Veg', 'Charcoal-grilled cottage cheese cubes simmered in a robust, spiced onion and tomato gravy.')">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=500&auto=format&fit=crop" alt="Paneer Tikka Masala" loading="lazy">
+                        <div class="overlay-zoom"><i class="fas fa-expand"></i></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Paneer Tikka Masala</h3>
+                            <span class="diet-indicator veg"></span>
+                        </div>
+                        <p class="price gold-text">₹280</p>
+                    </div>
+                </div>
+
+                <!-- Dish Item 4 -->
+                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=1000&auto=format&fit=crop', 'Shifu Veg Platter', '₹700', 'Veg', 'The ultimate assortment featuring Manchurian Dry, Babycorn & Mushroom Chilli, Paneer Kung Pao, Basil Paneer, and Finger Chips.')">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=500&auto=format&fit=crop" alt="Shifu Veg Platter" loading="lazy">
+                        <div class="overlay-zoom"><i class="fas fa-expand"></i></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Shifu Veg Platter</h3>
+                            <span class="diet-indicator veg"></span>
+                        </div>
+                        <p class="price gold-text">₹700</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="menu-starters.html" class="btn-secondary btn-large">Explore Full Menu <i class="fas fa-utensils"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION SECTION (Party & Catering) -->
+    <section class="cta-banner">
+        <div class="cta-overlay"></div>
+        <div class="container cta-content text-center">
+            <h2>Hosting a Special Event?</h2>
+            <p>We accept catering orders for Birthday Parties, Weddings, Engagements, and House Ceremonies. Pre-order bulk Biryani (min 2 kg) for festivals!</p>
+            <a href="contact.html" class="btn-primary btn-large">Enquire Now</a>
+        </div>
+    </section>
+
+    <!-- DISH DETAIL MODAL (Pop-up system triggered by JavaScript) -->
+    <div id="dishModal" class="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-img-wrapper">
+                <img id="modalImg" src="" alt="Dish Full Image">
+            </div>
+            <div class="modal-info">
+                <div class="modal-title-row">
+                    <h2 id="modalTitle">Dish Name</h2>
+                    <div id="modalDietIcon" class="diet-indicator"></div>
+                </div>
+                <h3 id="modalPrice" class="gold-text">₹0</h3>
+                <div class="modal-divider"></div>
+                <p id="modalDesc">Dish description.</p>
+                <button class="btn-primary full-width" onclick="closeModal()">Close Window</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOATING ACTION BUTTONS -->
+    <a href="https://wa.me/919044449969?text=Hello%20Indian%20Food%20Forest,%20I%20have%20an%20enquiry!" class="floating-btn whatsapp-float" target="_blank" aria-label="WhatsApp Us">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <button id="backToTop" class="floating-btn back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- FOOTER SECTION -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-widget about-widget">
+                <h3 class="footer-logo">INDIAN <span class="gold-text">FOOD FOREST</span></h3>
+                <p>A place where Taste, Tradition & Togetherness come alive. Join us for a memorable dining experience.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/indianfoodforest" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-widget links-widget">
+                <h4>Quick Menu</h4>
+                <ul>
+                    <li><a href="about.html"><i class="fas fa-angle-right"></i> Our Story</a></li>
+                    <li><a href="menu-starters.html"><i class="fas fa-angle-right"></i> Soups & Starters</a></li>
+                    <li><a href="menu-indian.html"><i class="fas fa-angle-right"></i> Main Course</a></li>
+                    <li><a href="contact.html"><i class="fas fa-angle-right"></i> Table Reservation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-widget contact-widget">
+                <h4>Reach Us</h4>
+                <ul class="contact-info">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Shop No. 50, Opp. Ramnagar Gate, Near M Ward Digha, Thane Belapur MIDC Road, Thane - 400708</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>
+                            <a href="tel:+919044449969">+91 9044449969</a><br>
+                            <a href="tel:+919137769044">+91 9137769044</a>
+                        </span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:indianfoodforest2025@gmail.com">indianfoodforest2025@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Indian Food Forest. All Rights Reserved. | <a href="contact.html">Support: +91 7304301858</a></p>
+        </div>
+    </footer>
+
+    <!-- LINK TO JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
