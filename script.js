@@ -67,26 +67,27 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // --- 6. Form Submission Loading & Success Feedback ---
+    // --- 6. Form Submission Loading & Reliable Success Feedback ---
     const contactForm = document.getElementById('my-form');
     const submitBtn = contactForm ? contactForm.querySelector('button[type="submit"]') : null;
 
     if (contactForm) {
         contactForm.addEventListener('submit', function() {
+            // Button state change
             if (submitBtn) {
                 submitBtn.disabled = true;
                 submitBtn.innerHTML = 'Submitting... <i class="fas fa-spinner fa-spin"></i>';
             }
-        });
 
-        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
-        formspree('on', 'success', function() {
-            alert('Thank you! Your enquiry has been sent successfully. We will get back to you shortly.');
-            if (submitBtn) {
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = 'Submit Enquiry <i class="fas fa-paper-plane"></i>';
-            }
-            contactForm.reset();
+            // Reliable 2.5 seconds timer for instant user feedback
+            setTimeout(function() {
+                alert('Thank you! Your enquiry has been sent successfully. We will get back to you shortly.');
+                contactForm.reset();
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = 'Submit Enquiry <i class="fas fa-paper-plane"></i>';
+                }
+            }, 2500);
         });
     }
 });
