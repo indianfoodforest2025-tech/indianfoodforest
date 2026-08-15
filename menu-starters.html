@@ -42,10 +42,10 @@
     </div>
 
     <!-- MAIN NAVIGATION -->
-    <header class="navbar" id="navbar">
+    <header class="navbar glass-navbar" id="navbar">
         <div class="nav-container">
             <a href="index.html" class="brand-logo">
-                <span class="brand-name">INDIAN <span class="gold-text">FOOD FOREST</span></span>
+                <span class="brand-name">INDIAN <span class="theme-accent">FOOD FOREST</span></span>
             </a>
             
             <div class="hamburger" id="hamburger">
@@ -61,7 +61,7 @@
                     
                     <li class="dropdown">
                         <a href="#menu" class="active">Our Menu <i class="fas fa-chevron-down"></i></a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu glass-dropdown">
                             <li><a href="menu-starters.html" class="active">Soups & Starters</a></li>
                             <li><a href="menu-tandoori.html">Tandoori & Kebabs</a></li>
                             <li><a href="menu-asian.html">Asian Delights</a></li>
@@ -84,115 +84,125 @@
     <section class="page-header menu-bg">
         <div class="header-overlay"></div>
         <div class="container text-center">
-            <h1 class="page-title">Soups & <span class="gold-text">Starters</span></h1>
+            <h1 class="page-title">Soups & <span class="theme-accent">Starters</span></h1>
             <p class="breadcrumbs"><a href="index.html">Home</a> <i class="fas fa-angle-right"></i> Menu <i class="fas fa-angle-right"></i> Starters</p>
         </div>
     </section>
 
-    <!-- CATEGORY JUMP MENU (For easy navigation on long pages) -->
-    <div class="category-nav">
+    <!-- CATEGORY JUMP MENU (Glassmorphism) -->
+    <div class="category-nav glass-panel">
         <div class="container text-center">
-            <a href="#soups" class="cat-btn">Soups</a>
-            <a href="#veg-starters" class="cat-btn">Veg Starters</a>
-            <a href="#nonveg-starters" class="cat-btn">Non-Veg Starters</a>
+            <a href="#soups" class="cat-btn glass-btn">Soups</a>
+            <a href="#veg-starters" class="cat-btn glass-btn">Veg Starters</a>
+            <a href="#nonveg-starters" class="cat-btn glass-btn">Non-Veg Starters</a>
         </div>
     </div>
 
     <!-- SOUPS SECTION -->
     <section id="soups" class="menu-section section-padding">
         <div class="container">
-            <div class="section-header text-center">
-                <h2 class="section-title">Warm & Comforting <span class="gold-text">Soups</span></h2>
+            <div class="section-header text-center glass-header">
+                <h2 class="section-title">Warm & Comforting <span class="theme-accent">Soups</span></h2>
                 <div class="heading-divider"></div>
             </div>
 
             <div class="menu-grid">
-                <!-- Generating Soup Cards -->
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=800', 'Clear Soup', 'Veg ₹90 / Chicken ₹100', 'Veg/Non-Veg', 'A light, healthy, and flavorful clear broth served with fresh greens or chicken.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=400" alt="Clear Soup" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Clear Soup', 'Veg ₹90 / Chicken ₹100', 'Veg/Non-Veg', 'A light, healthy, and flavorful clear broth served with fresh greens or chicken.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Clear Soup</h3><span class="diet-indicator veg"></span></div>
-                        <p class="price gold-text">Veg ₹90 / Chi ₹100</p>
+                        <div class="card-header">
+                            <h3>Clear Soup</h3>
+                            <span class="diet-indicator veg"></span>
+                        </div>
+                        <p class="dish-short-desc">A light, healthy, and flavorful clear broth served with fresh greens or chicken.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">Veg ₹90 / Chi ₹100</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=800', 'Garlic Soup', 'Veg ₹100 / Chicken ₹120', 'Veg/Non-Veg', 'Aromatic soup infused with roasted garlic to warm up your palate.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=400" alt="Garlic Soup" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Garlic Soup', 'Veg ₹100 / Chicken ₹120', 'Veg/Non-Veg', 'Aromatic soup infused with roasted garlic to warm up your palate.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Garlic Soup</h3><span class="diet-indicator veg"></span></div>
-                        <p class="price gold-text">Veg ₹100 / Chi ₹120</p>
+                        <div class="card-header">
+                            <h3>Garlic Soup</h3>
+                            <span class="diet-indicator veg"></span>
+                        </div>
+                        <p class="dish-short-desc">Aromatic soup infused with roasted garlic to warm up your palate.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">Veg ₹100 / Chi ₹120</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=800', 'Manchow Soup', 'Veg ₹110 / Chicken ₹120', 'Veg/Non-Veg', 'A dark brown soup with mixed vegetables, soy sauce, garlic, topped with crispy noodles.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=400" alt="Manchow Soup" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Manchow Soup', 'Veg ₹110 / Chicken ₹120', 'Veg/Non-Veg', 'A dark brown soup with mixed vegetables, soy sauce, garlic, topped with crispy noodles.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Manchow Soup</h3><span class="diet-indicator veg"></span></div>
-                        <p class="price gold-text">Veg ₹110 / Chi ₹120</p>
+                        <div class="card-header">
+                            <h3>Manchow Soup</h3>
+                            <span class="diet-indicator veg"></span>
+                        </div>
+                        <p class="dish-short-desc">A dark brown soup with mixed vegetables, soy sauce, garlic, topped with crispy noodles.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">Veg ₹110 / Chi ₹120</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=800', 'Hot and Sour Soup', 'Veg ₹110 / Chicken ₹120', 'Veg/Non-Veg', 'A perfect balance of spicy and tangy flavors, packed with fresh vegetables or chicken.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=400" alt="Hot and Sour" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Hot and Sour Soup', 'Veg ₹110 / Chicken ₹120', 'Veg/Non-Veg', 'A perfect balance of spicy and tangy flavors, packed with fresh vegetables or chicken.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Hot and Sour Soup</h3><span class="diet-indicator veg"></span></div>
-                        <p class="price gold-text">Veg ₹110 / Chi ₹120</p>
+                        <div class="card-header">
+                            <h3>Hot and Sour Soup</h3>
+                            <span class="diet-indicator veg"></span>
+                        </div>
+                        <p class="dish-short-desc">A perfect balance of spicy and tangy flavors, packed with fresh vegetables or chicken.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">Veg ₹110 / Chi ₹120</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=800', 'Noodle Soup', 'Veg ₹130 / Chicken ₹150', 'Veg/Non-Veg', 'A comforting bowl of broth loaded with soft noodles and fresh ingredients.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=400" alt="Noodle Soup" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Noodle Soup', 'Veg ₹130 / Chicken ₹150', 'Veg/Non-Veg', 'A comforting bowl of broth loaded with soft noodles and fresh ingredients.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Noodle Soup</h3><span class="diet-indicator veg"></span></div>
-                        <p class="price gold-text">Veg ₹130 / Chi ₹150</p>
+                        <div class="card-header">
+                            <h3>Noodle Soup</h3>
+                            <span class="diet-indicator veg"></span>
+                        </div>
+                        <p class="dish-short-desc">A comforting bowl of broth loaded with soft noodles and fresh ingredients.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">Veg ₹130 / Chi ₹150</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=800', 'Lemon Coriander Soup', 'Veg ₹110 / Chicken ₹120', 'Veg/Non-Veg', 'A refreshing, citrusy broth with the aromatic touch of fresh coriander leaves.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=400" alt="Lemon Coriander Soup" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Lemon Coriander Soup', 'Veg ₹110 / Chicken ₹120', 'Veg/Non-Veg', 'A refreshing, citrusy broth with the aromatic touch of fresh coriander leaves.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Lemon Coriander Soup</h3><span class="diet-indicator veg"></span></div>
-                        <p class="price gold-text">Veg ₹110 / Chi ₹120</p>
-                    </div>
-                </div>
-
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=800', 'Mushroom / Babycorn Soup', 'Veg ₹130 / Chicken ₹150', 'Veg/Non-Veg', 'Rich and hearty soup featuring your choice of earthy mushrooms or sweet babycorn.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=400" alt="Mushroom Soup" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
-                    <div class="card-content">
-                        <div class="card-header"><h3>Mushroom/Babycorn Soup</h3><span class="diet-indicator veg"></span></div>
-                        <p class="price gold-text">Veg ₹130 / Chi ₹150</p>
-                    </div>
-                </div>
-
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=800', 'Broccoli / Lung Fung Soup', 'Veg ₹140 / Chicken ₹150', 'Veg/Non-Veg', 'A rich, thick specialty soup meant for royal cravings.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=400" alt="Broccoli Soup" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
-                    <div class="card-content">
-                        <div class="card-header"><h3>Broccoli/Lung Fung Soup</h3><span class="diet-indicator veg"></span></div>
-                        <p class="price gold-text">₹140 - ₹150</p>
-                    </div>
-                </div>
-
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=800', 'Tom Yum / Thukpa Soup', 'Veg ₹120 / Chicken ₹150', 'Veg/Non-Veg', 'Experience the exotic Asian flavors with authentic Thai Tom Yum or Tibetan Thukpa.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=400" alt="Tom Yum" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
-                    <div class="card-content">
-                        <div class="card-header"><h3>Tom Yum / Thukpa Soup</h3><span class="diet-indicator veg"></span></div>
-                        <p class="price gold-text">₹120 - ₹150</p>
-                    </div>
-                </div>
-
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=800', 'Laksa / Shifu Special Soup', 'Veg ₹130 / Chicken ₹150', 'Veg/Non-Veg', 'Our signature Chef specials bursting with coconut richness and secret spices.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=400" alt="Laksa Soup" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
-                    <div class="card-content">
-                        <div class="card-header"><h3>Laksa / Shifu Spl Soup</h3><span class="diet-indicator veg"></span></div>
-                        <p class="price gold-text">Veg ₹130 / Chi ₹150</p>
+                        <div class="card-header">
+                            <h3>Lemon Coriander Soup</h3>
+                            <span class="diet-indicator veg"></span>
+                        </div>
+                        <p class="dish-short-desc">A refreshing, citrusy broth with the aromatic touch of fresh coriander leaves.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">Veg ₹110 / Chi ₹120</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=800', 'Sweet Corn Soup', 'Veg ₹140 / Chicken ₹150', 'Veg/Non-Veg', 'A classic favorite. Thick, mildly sweet soup with crushed and whole sweet corn.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=400" alt="Sweet Corn" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Sweet Corn Soup', 'Veg ₹140 / Chicken ₹150', 'Veg/Non-Veg', 'A classic favorite. Thick, mildly sweet soup with crushed and whole sweet corn.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Sweet Corn Soup</h3><span class="diet-indicator veg"></span></div>
-                        <p class="price gold-text">Veg ₹140 / Chi ₹150</p>
+                        <div class="card-header">
+                            <h3>Sweet Corn Soup</h3>
+                            <span class="diet-indicator veg"></span>
+                        </div>
+                        <p class="dish-short-desc">A classic favorite. Thick, mildly sweet soup with crushed and whole sweet corn.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">Veg ₹140 / Chi ₹150</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -200,121 +210,141 @@
     </section>
 
     <!-- VEGETARIAN STARTERS SECTION -->
-    <section id="veg-starters" class="menu-section section-padding bg-dark">
+    <section id="veg-starters" class="menu-section section-padding">
         <div class="container">
-            <div class="section-header text-center">
-                <h2 class="section-title">Crispy <span class="gold-text">Vegetarian</span> Starters</h2>
+            <div class="section-header text-center glass-header">
+                <h2 class="section-title">Crispy <span class="theme-accent">Vegetarian</span> Starters</h2>
                 <div class="heading-divider"></div>
             </div>
 
             <div class="menu-grid">
-                <!-- Generating ALL Veg Starters (Grouped logically to maintain speed and UI excellence) -->
                 
                 <!-- Paneer Items -->
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=800', 'Paneer Chilli', '₹230', 'Veg', 'Classic Indo-Chinese appetizer featuring crispy cottage cheese tossed with bell peppers and soy-chilli sauce.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=400" alt="Paneer Chilli" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Paneer Chilli', '₹230', 'Veg', 'Classic Indo-Chinese appetizer featuring crispy cottage cheese tossed with bell peppers and soy-chilli sauce.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Paneer Chilli</h3><span class="diet-indicator veg"></span></div>
-                        <p class="price gold-text">₹230</p>
+                        <div class="card-header">
+                            <h3>Paneer Chilli</h3>
+                            <span class="diet-indicator veg"></span>
+                        </div>
+                        <p class="dish-short-desc">Classic Indo-Chinese appetizer featuring crispy cottage cheese tossed with bell peppers...</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">₹230</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=800', 'Paneer Crispy / Paneer 65', '₹230 - ₹240', 'Veg', 'Ultra crispy fried paneer cubes, tossed in secret red spices and curry leaves.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=400" alt="Paneer Crispy" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Paneer Crispy / Paneer 65', '₹230 - ₹240', 'Veg', 'Ultra crispy fried paneer cubes, tossed in secret red spices and curry leaves.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Paneer Crispy / 65</h3><span class="diet-indicator veg"></span></div>
-                        <p class="price gold-text">₹230 - ₹240</p>
+                        <div class="card-header">
+                            <h3>Paneer Crispy / 65</h3>
+                            <span class="diet-indicator veg"></span>
+                        </div>
+                        <p class="dish-short-desc">Ultra crispy fried paneer cubes, tossed in secret red spices and curry leaves.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">₹230 - ₹240</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=800', 'Paneer Schezwan / Manchurian Dry', '₹230', 'Veg', 'Succulent paneer coated in your choice of spicy Schezwan or classic Manchurian dark sauce.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=400" alt="Paneer Manchurian" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Paneer Schezwan / Manchurian Dry', '₹230', 'Veg', 'Succulent paneer coated in your choice of spicy Schezwan or classic Manchurian dark sauce.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Paneer Schezwan/Manchurian</h3><span class="diet-indicator veg"></span></div>
-                        <p class="price gold-text">₹230</p>
-                    </div>
-                </div>
-
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=800', 'Paneer Kung Pao / Hunan Dry', '₹240', 'Veg', 'Exotic Asian style preparation with peanuts, dry red chillies, and premium sauces.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=400" alt="Paneer Kung Pao" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
-                    <div class="card-content">
-                        <div class="card-header"><h3>Paneer Kung Pao / Hunan</h3><span class="diet-indicator veg"></span></div>
-                        <p class="price gold-text">₹240</p>
-                    </div>
-                </div>
-
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=800', 'Paneer BBQ / Black Pepper Dry', '₹230 - ₹240', 'Veg', 'Smoky Barbeque sauce or fiery Black pepper crust over soft paneer chunks.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=400" alt="Paneer BBQ" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
-                    <div class="card-content">
-                        <div class="card-header"><h3>Paneer BBQ / Black Pepper</h3><span class="diet-indicator veg"></span></div>
-                        <p class="price gold-text">₹230 - ₹240</p>
+                        <div class="card-header">
+                            <h3>Paneer Schezwan/Manchurian</h3>
+                            <span class="diet-indicator veg"></span>
+                        </div>
+                        <p class="dish-short-desc">Succulent paneer coated in your choice of spicy Schezwan or classic Manchurian dark sauce.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">₹230</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Veg Mix Items -->
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1606131731446-5568d87113aa?q=80&w=800', 'Veg Crispy / Singapore Dry', '₹240', 'Veg', 'Assorted fresh vegetables batter-fried to ultimate crispiness, tossed in tangy and spicy sauces.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1606131731446-5568d87113aa?q=80&w=400" alt="Veg Crispy" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Veg Crispy / Singapore Dry', '₹240', 'Veg', 'Assorted fresh vegetables batter-fried to ultimate crispiness, tossed in tangy and spicy sauces.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Veg Crispy / Singapore Dry</h3><span class="diet-indicator veg"></span></div>
-                        <p class="price gold-text">₹240</p>
+                        <div class="card-header">
+                            <h3>Veg Crispy / Singapore Dry</h3>
+                            <span class="diet-indicator veg"></span>
+                        </div>
+                        <p class="dish-short-desc">Assorted fresh vegetables batter-fried to ultimate crispiness, tossed in tangy sauces.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">₹240</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1606131731446-5568d87113aa?q=80&w=800', 'Veg Manchurian / Schezwan Dry', '₹200', 'Veg', 'Deep-fried vegetable dumplings tossed in bold, aromatic Chinese sauces.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1606131731446-5568d87113aa?q=80&w=400" alt="Veg Manchurian" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Veg Manchurian / Schezwan Dry', '₹200', 'Veg', 'Deep-fried vegetable dumplings tossed in bold, aromatic Chinese sauces.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Veg Manchurian / Schezwan</h3><span class="diet-indicator veg"></span></div>
-                        <p class="price gold-text">₹200</p>
+                        <div class="card-header">
+                            <h3>Veg Manchurian / Schezwan</h3>
+                            <span class="diet-indicator veg"></span>
+                        </div>
+                        <p class="dish-short-desc">Deep-fried vegetable dumplings tossed in bold, aromatic Chinese sauces.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">₹200</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1606131731446-5568d87113aa?q=80&w=800', 'Soyabean Chilli / Kung Pao', '₹230', 'Veg', 'High-protein soyabean chunks prepared in classic chilli or roasted peanut kung pao sauce.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1606131731446-5568d87113aa?q=80&w=400" alt="Soyabean Chilli" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Crispy Chilli Potato / Finger Chips', '₹180 - ₹240', 'Veg', 'Everyone\'s favorite crispy potato wedges and fries, tossed in spicy honey-chilli sauce.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Soyabean Chilli / Kung Pao</h3><span class="diet-indicator veg"></span></div>
-                        <p class="price gold-text">₹230</p>
+                        <div class="card-header">
+                            <h3>Crispy Chilli Potato / Chips</h3>
+                            <span class="diet-indicator veg"></span>
+                        </div>
+                        <p class="dish-short-desc">Everyone's favorite crispy potato wedges and fries, tossed in spicy honey-chilli sauce.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">₹180 - ₹240</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Mushroom & Potato -->
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?q=80&w=800', 'Crispy Chilli Potato / Finger Chips', '₹180 - ₹240', 'Veg', 'Everyone\'s favorite crispy potato wedges and fries, tossed in spicy honey-chilli sauce.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?q=80&w=400" alt="Chilli Potato" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <!-- Premium Veg Starters -->
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Veg / Paneer Spring Roll', '₹250 - ₹280', 'Veg', 'Crispy golden rolls stuffed with perfectly seasoned julienned vegetables and paneer.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Crispy Chilli Potato / Chips</h3><span class="diet-indicator veg"></span></div>
-                        <p class="price gold-text">₹180 - ₹240</p>
+                        <div class="card-header">
+                            <h3>Veg / Paneer Spring Roll</h3>
+                            <span class="diet-indicator veg"></span>
+                        </div>
+                        <p class="dish-short-desc">Crispy golden rolls stuffed with perfectly seasoned julienned vegetables and paneer.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">₹250 - ₹280</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?q=80&w=800', 'Mushroom Babycorn Chilli / Crispy', '₹240', 'Veg', 'Earthy mushrooms and sweet babycorn fried to perfection in chilli or crispy style.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?q=80&w=400" alt="Mushroom Chilli" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Crunchy Cheese Thread Paneer', '₹300', 'Veg', 'A highly premium, instagram-worthy appetizer. Soft paneer wrapped in crispy noodle threads and cheese.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Mushroom Babycorn Series</h3><span class="diet-indicator veg"></span></div>
-                        <p class="price gold-text">₹240</p>
+                        <div class="card-header">
+                            <h3>Crunchy Cheese Thread Paneer</h3>
+                            <span class="diet-indicator veg"></span>
+                        </div>
+                        <p class="dish-short-desc">A highly premium appetizer. Soft paneer wrapped in crispy noodle threads and cheese.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">₹300</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Rolls & Premium Starters -->
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1606131731446-5568d87113aa?q=80&w=800', 'Veg / Paneer Spring Roll', '₹250 - ₹280', 'Veg', 'Crispy golden rolls stuffed with perfectly seasoned julienned vegetables and paneer.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1606131731446-5568d87113aa?q=80&w=400" alt="Spring Roll" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Shifu Special Veg Starter', '₹280', 'Veg', 'The Chef\'s secret signature recipe designed to surprise your taste buds.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Veg / Paneer Spring Roll</h3><span class="diet-indicator veg"></span></div>
-                        <p class="price gold-text">₹250 - ₹280</p>
-                    </div>
-                </div>
-
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=800', 'Crunchy Cheese Thread Paneer', '₹300', 'Veg', 'A highly premium, instagram-worthy appetizer. Soft paneer wrapped in crispy noodle threads and cheese.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=400" alt="Thread Paneer" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
-                    <div class="card-content">
-                        <div class="card-header"><h3>Crunchy Cheese Thread Paneer</h3><span class="diet-indicator veg"></span></div>
-                        <p class="price gold-text">₹300</p>
-                    </div>
-                </div>
-
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1606131731446-5568d87113aa?q=80&w=800', 'Shifu Special Veg Starter', '₹280', 'Veg', 'The Chef\'s secret signature recipe designed to surprise your taste buds.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1606131731446-5568d87113aa?q=80&w=400" alt="Shifu Special" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
-                    <div class="card-content">
-                        <div class="card-header"><h3>Shifu Special Starter</h3><span class="diet-indicator veg"></span></div>
-                        <p class="price gold-text">₹280</p>
+                        <div class="card-header">
+                            <h3>Shifu Special Starter</h3>
+                            <span class="diet-indicator veg"></span>
+                        </div>
+                        <p class="dish-short-desc">The Chef's secret signature recipe designed to surprise your taste buds.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">₹280</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -324,156 +354,164 @@
     <!-- NON-VEGETARIAN STARTERS SECTION -->
     <section id="nonveg-starters" class="menu-section section-padding">
         <div class="container">
-            <div class="section-header text-center">
-                <h2 class="section-title">Sizzling <span class="gold-text">Non-Veg</span> Starters</h2>
+            <div class="section-header text-center glass-header">
+                <h2 class="section-title">Sizzling <span class="theme-accent">Non-Veg</span> Starters</h2>
                 <div class="heading-divider"></div>
             </div>
 
             <div class="menu-grid">
+                
                 <!-- Egg Items -->
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=800', 'Egg Fry / Schezwan / Kung Pao', '₹100 - ₹220', 'Non-Veg', 'Boiled eggs uniquely fried and tossed in bold Asian sauces of your choice.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=400" alt="Egg Starters" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Egg Fry / Schezwan / Kung Pao', '₹100 - ₹220', 'Non-Veg', 'Boiled eggs uniquely fried and tossed in bold Asian sauces of your choice.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Egg Special Starters</h3><span class="diet-indicator non-veg"></span></div>
-                        <p class="price gold-text">₹100 - ₹220</p>
-                    </div>
-                </div>
-
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=800', 'Pota / Kaleji Fry', '₹180', 'Non-Veg', 'Traditional, highly spiced, and slow-fried chicken liver and giblets.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=400" alt="Kaleji Fry" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
-                    <div class="card-content">
-                        <div class="card-header"><h3>Pota / Kaleji Fry</h3><span class="diet-indicator non-veg"></span></div>
-                        <p class="price gold-text">₹180</p>
+                        <div class="card-header">
+                            <h3>Egg Special Starters</h3>
+                            <span class="diet-indicator non-veg"></span>
+                        </div>
+                        <p class="dish-short-desc">Boiled eggs uniquely fried and tossed in bold Asian sauces of your choice.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">₹100 - ₹220</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Chicken Items -->
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=800', 'Chicken Chilli / Manchurian Dry', '₹230', 'Non-Veg', 'The undisputed king of starters. Tender chicken in classic soy, garlic, and chilli sauce.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=400" alt="Chicken Chilli" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Chicken Chilli / Manchurian Dry', '₹230', 'Non-Veg', 'The undisputed king of starters. Tender chicken in classic soy, garlic, and chilli sauce.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Chicken Chilli / Manchurian</h3><span class="diet-indicator non-veg"></span></div>
-                        <p class="price gold-text">₹230</p>
+                        <div class="card-header">
+                            <h3>Chicken Chilli / Manchurian</h3>
+                            <span class="diet-indicator non-veg"></span>
+                        </div>
+                        <p class="dish-short-desc">The undisputed king of starters. Tender chicken in classic soy, garlic, and chilli sauce.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">₹230</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=800', 'Chicken Crispy / Chicken 65', '₹230 - ₹240', 'Non-Veg', 'Shredded crispy chicken tossed in sweet-spicy sauce, or South Indian style spicy Chicken 65.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=400" alt="Chicken Crispy" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Chicken Crispy / Chicken 65', '₹230 - ₹240', 'Non-Veg', 'Shredded crispy chicken tossed in sweet-spicy sauce, or South Indian style spicy Chicken 65.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Chicken Crispy / 65</h3><span class="diet-indicator non-veg"></span></div>
-                        <p class="price gold-text">₹230 - ₹240</p>
+                        <div class="card-header">
+                            <h3>Chicken Crispy / 65</h3>
+                            <span class="diet-indicator non-veg"></span>
+                        </div>
+                        <p class="dish-short-desc">Shredded crispy chicken tossed in sweet-spicy sauce, or South Indian spicy Chicken 65.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">₹230 - ₹240</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=800', 'Chicken Lollypop (Oil Fry/Masala)', '₹220 - ₹260', 'Non-Veg', 'Everyone\'s favorite drummettes, available in crispy oil fry, spicy masala, or rich gravy.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=400" alt="Chicken Lollypop" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Chicken Lollypop (Oil Fry/Masala)', '₹220 - ₹260', 'Non-Veg', 'Everyone\'s favorite drummettes, available in crispy oil fry, spicy masala, or rich gravy.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Chicken Lollypop</h3><span class="diet-indicator non-veg"></span></div>
-                        <p class="price gold-text">₹220 - ₹260</p>
+                        <div class="card-header">
+                            <h3>Chicken Lollypop</h3>
+                            <span class="diet-indicator non-veg"></span>
+                        </div>
+                        <p class="dish-short-desc">Everyone's favorite drummettes, available in crispy oil fry, spicy masala, or rich gravy.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">₹220 - ₹260</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=800', 'Chicken Wings / Fiery Wings', '₹200 - ₹220', 'Non-Veg', 'Juicy chicken wings prepared classic style or tossed in our fiery, blazing hot sauce.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=400" alt="Chicken Wings" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Crunchy Thread / Fried Chicken', '₹300', 'Non-Veg', 'Ultimate crunch! Chicken strips wrapped in crispy noodles, or classic crispy fried chicken.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Chicken Wings / Fiery</h3><span class="diet-indicator non-veg"></span></div>
-                        <p class="price gold-text">₹200 - ₹220</p>
+                        <div class="card-header">
+                            <h3>Crunchy Thread Chicken</h3>
+                            <span class="diet-indicator non-veg"></span>
+                        </div>
+                        <p class="dish-short-desc">Ultimate crunch! Chicken strips wrapped in crispy noodles, or classic crispy fried chicken.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">₹300</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=800', 'Chicken Satay / Kung Pao', '₹240 - ₹300', 'Non-Veg', 'Premium skewered chicken in peanut sauce (Satay) or wok-tossed with roasted peanuts (Kung Pao).')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=400" alt="Chicken Satay" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <!-- Seafood & Premium -->
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Fish Chilli Dry / Fish Fingers', '₹350', 'Non-Veg', 'Fresh, tender fish chunks battered and tossed in spicy chilli sauce or served as crispy fingers.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Chicken Satay / Kung Pao</h3><span class="diet-indicator non-veg"></span></div>
-                        <p class="price gold-text">₹240 - ₹300</p>
+                        <div class="card-header">
+                            <h3>Fish Chilli / Fish Fingers</h3>
+                            <span class="diet-indicator non-veg"></span>
+                        </div>
+                        <p class="dish-short-desc">Fresh, tender fish chunks battered and tossed in spicy chilli sauce or crispy fingers.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">₹350</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=800', 'Honey Chicken / Lemon Chicken', '₹230 - ₹240', 'Non-Veg', 'A perfect balance of sweet and tangy flavors. Great for mild palates.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=400" alt="Honey Chicken" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Prawns Butter Garlic / Chilli', '₹350', 'Non-Veg', 'Premium jumbo prawns tossed in a rich, creamy butter garlic sauce or fiery chilli sauce.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Honey / Lemon Chicken</h3><span class="diet-indicator non-veg"></span></div>
-                        <p class="price gold-text">₹230 - ₹240</p>
+                        <div class="card-header">
+                            <h3>Prawns Butter Garlic</h3>
+                            <span class="diet-indicator non-veg"></span>
+                        </div>
+                        <p class="dish-short-desc">Premium jumbo prawns tossed in a rich, creamy butter garlic sauce or fiery chilli sauce.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">₹350</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Rolls & Premium Chicken -->
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=800', 'Crunchy Thread / Fried Chicken', '₹300', 'Non-Veg', 'Ultimate crunch! Chicken strips wrapped in crispy noodles, or classic crispy fried chicken.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=400" alt="Thread Chicken" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Shifu Special Non-Veg Starter', '₹300', 'Non-Veg', 'Our Chef\'s highly recommended signature non-veg creation, made to perfection.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Crunchy Thread Chicken</h3><span class="diet-indicator non-veg"></span></div>
-                        <p class="price gold-text">₹300</p>
+                        <div class="card-header">
+                            <h3>Shifu Special Non-Veg</h3>
+                            <span class="diet-indicator non-veg"></span>
+                        </div>
+                        <p class="dish-short-desc">Our Chef's highly recommended signature non-veg creation, made to perfection.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">₹300</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=800', 'Chicken / Cheese Spring Roll', '₹300', 'Non-Veg', 'Crispy rolls generously stuffed with minced chicken, veggies, and melting cheese.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=400" alt="Chicken Roll" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
-                    <div class="card-content">
-                        <div class="card-header"><h3>Chicken Spring Rolls</h3><span class="diet-indicator non-veg"></span></div>
-                        <p class="price gold-text">₹300</p>
-                    </div>
-                </div>
-
-                <!-- Seafood Items -->
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1625937712144-8c65c276329a?q=80&w=800', 'Fish Chilli Dry / Fish Fingers', '₹350', 'Non-Veg', 'Fresh, tender fish chunks battered and tossed in spicy chilli sauce or served as crispy fingers.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1625937712144-8c65c276329a?q=80&w=400" alt="Fish Chilli" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
-                    <div class="card-content">
-                        <div class="card-header"><h3>Fish Chilli / Fish Fingers</h3><span class="diet-indicator non-veg"></span></div>
-                        <p class="price gold-text">₹350</p>
-                    </div>
-                </div>
-
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1625937712144-8c65c276329a?q=80&w=800', 'Prawns Butter Garlic / Chilli', '₹350', 'Non-Veg', 'Premium jumbo prawns tossed in a rich, creamy butter garlic sauce or fiery chilli sauce.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1625937712144-8c65c276329a?q=80&w=400" alt="Butter Garlic Prawns" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
-                    <div class="card-content">
-                        <div class="card-header"><h3>Prawns Butter Garlic</h3><span class="diet-indicator non-veg"></span></div>
-                        <p class="price gold-text">₹350</p>
-                    </div>
-                </div>
-
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=800', 'Shifu Special Non-Veg Starter', '₹300', 'Non-Veg', 'Our Chef\'s highly recommended signature non-veg creation, made to perfection.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=400" alt="Special Non Veg" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
-                    <div class="card-content">
-                        <div class="card-header"><h3>Shifu Special Non-Veg</h3><span class="diet-indicator non-veg"></span></div>
-                        <p class="price gold-text">₹300</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- DISH DETAIL MODAL (Pop-up system triggered by JavaScript) -->
+    <!-- DISH DETAIL MODAL (Glassmorphism Pop-up) -->
     <div id="dishModal" class="modal-overlay">
-        <div class="modal-box">
+        <div class="modal-box glass-modal">
             <button class="modal-close"><i class="fas fa-times"></i></button>
-            <div class="modal-img-wrapper">
-                <img id="modalImg" src="" alt="Dish Full Image">
-            </div>
-            <div class="modal-info">
+            <div class="modal-info text-only-modal">
                 <div class="modal-title-row">
                     <h2 id="modalTitle">Dish Name</h2>
                     <div id="modalDietIcon" class="diet-indicator"></div>
                 </div>
-                <h3 id="modalPrice" class="gold-text">₹0</h3>
+                <h3 id="modalPrice" class="theme-accent">₹0</h3>
                 <div class="modal-divider"></div>
                 <p id="modalDesc">Dish description.</p>
-                <button class="btn-primary full-width" onclick="closeModal()">Close Window</button>
+                <div class="modal-footer">
+                    <button class="btn-primary full-width" onclick="closeModal()">Close Window</button>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- FLOATING ACTION BUTTONS -->
-    <a href="https://wa.me/919044449969?text=Hello%20Indian%20Food%20Forest,%20I%20have%20an%20enquiry!" class="floating-btn whatsapp-float" target="_blank" aria-label="WhatsApp Us">
+    <a href="https://wa.me/919044449969?text=Hello%20Indian%20Food%20Forest,%20I%20have%20an%20enquiry!" class="floating-btn whatsapp-float glass-float" target="_blank" aria-label="WhatsApp Us">
         <i class="fab fa-whatsapp"></i>
     </a>
-    <button id="backToTop" class="floating-btn back-to-top" aria-label="Back to top">
+    <button id="backToTop" class="floating-btn back-to-top glass-float" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- FOOTER SECTION -->
-    <footer class="site-footer">
+    <!-- FOOTER SECTION (Clean & Professional) -->
+    <footer class="site-footer glass-footer">
         <div class="container footer-grid">
             <div class="footer-widget about-widget">
-                <h3 class="footer-logo">INDIAN <span class="gold-text">FOOD FOREST</span></h3>
+                <h3 class="footer-logo">INDIAN <span class="theme-accent">FOOD FOREST</span></h3>
                 <p>A place where Taste, Tradition & Togetherness come alive. Join us for a memorable dining experience.</p>
                 <div class="social-icons">
                     <a href="https://www.instagram.com/indianfoodforest" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -495,9 +533,21 @@
             <div class="footer-widget contact-widget">
                 <h4>Reach Us</h4>
                 <ul class="contact-info">
-                    <li><a href="https://maps.app.goo.gl/placeholder" target="_blank"><i class="fas fa-map-marker-alt"></i> Shop No. 50, Ramnagar Gate, MIDC Road, Thane - 400708</a></li>
-                    <li><a href="tel:+919044449969"><i class="fas fa-phone-alt"></i> +91 9044449969 / 9137769044</a></li>
-                    <li><a href="mailto:indianfoodforest2025@gmail.com"><i class="fas fa-envelope"></i> indianfoodforest2025@gmail.com</a></li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Shop No. 50, Opp. Ramnagar Gate, Near M Ward Digha, Thane Belapur MIDC Road, Thane - 400708</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>
+                            <a href="tel:+919044449969">+91 9044449969</a><br>
+                            <a href="tel:+919137769044">+91 9137769044</a>
+                        </span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:indianfoodforest2025@gmail.com">indianfoodforest2025@gmail.com</a>
+                    </li>
                 </ul>
             </div>
         </div>
