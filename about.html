@@ -41,11 +41,11 @@
         </div>
     </div>
 
-    <!-- MAIN NAVIGATION -->
-    <header class="navbar" id="navbar">
+    <!-- MAIN NAVIGATION (Glassmorphism) -->
+    <header class="navbar glass-navbar" id="navbar">
         <div class="nav-container">
             <a href="index.html" class="brand-logo">
-                <span class="brand-name">INDIAN <span class="gold-text">FOOD FOREST</span></span>
+                <span class="brand-name">INDIAN <span class="theme-accent">FOOD FOREST</span></span>
             </a>
             
             <div class="hamburger" id="hamburger">
@@ -57,11 +57,11 @@
             <nav class="nav-links" id="nav-links">
                 <ul class="menu-list">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="active">About</a></li> <!-- Active Class Moved Here -->
+                    <li><a href="about.html" class="active">About</a></li>
                     
                     <li class="dropdown">
                         <a href="#menu">Our Menu <i class="fas fa-chevron-down"></i></a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu glass-dropdown">
                             <li><a href="menu-starters.html">Soups & Starters</a></li>
                             <li><a href="menu-tandoori.html">Tandoori & Kebabs</a></li>
                             <li><a href="menu-asian.html">Asian Delights</a></li>
@@ -80,69 +80,70 @@
         </div>
     </header>
 
-    <!-- PAGE HEADER (Inner Page Hero) -->
+    <!-- PAGE HEADER -->
     <section class="page-header about-bg">
         <div class="header-overlay"></div>
         <div class="container text-center">
-            <h1 class="page-title">Our <span class="gold-text">Story</span></h1>
+            <h1 class="page-title">Our <span class="theme-accent">Story</span></h1>
             <p class="breadcrumbs"><a href="index.html">Home</a> <i class="fas fa-angle-right"></i> About Us</p>
         </div>
     </section>
 
-    <!-- THE STORY SECTION -->
+    <!-- THE STORY SECTION (Glass Panel) -->
     <section class="about-main section-padding">
         <div class="container">
-            <div class="about-flex">
+            <div class="about-flex glass-panel-large" style="padding: 40px; border-radius: 15px;">
                 <div class="about-image-collage">
-                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&auto=format&fit=crop" alt="Indian Food Forest Ambiance" class="main-img border-gold" loading="lazy">
+                    <!-- Removed the broken unsplash image, keeping it clean with text and stats -->
+                    <div class="stat-box-container">
+                        <div class="stats-row">
+                            <div class="stat-box glass-card">
+                                <h3 class="theme-accent">200+</h3>
+                                <p>Premium Dishes</p>
+                            </div>
+                            <div class="stat-box glass-card">
+                                <h3 class="theme-accent">100%</h3>
+                                <p>Fresh Ingredients</p>
+                            </div>
+                            <div class="stat-box glass-card">
+                                <h3 class="theme-accent">2 AM</h3>
+                                <p>Late Night Service</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="about-text">
                     <h4 class="section-subtitle">A Journey of Flavors</h4>
-                    <h2 class="section-title">Welcome to <span class="gold-text">Indian Food Forest</span></h2>
+                    <h2 class="section-title">Welcome to <span class="theme-accent">Indian Food Forest</span></h2>
                     <p class="lead-text">Opening its doors to the world on <strong>15th August 2026</strong>, Indian Food Forest is not just a restaurant; it is a celebration of culinary art.</p>
                     <p>Rooted in the philosophy of <em>Taste, Tradition & Togetherness</em>, we have created a sanctuary where the rustic charm of a forest meets the royal elegance of Indian dining. Our expert chefs bring generations of traditional recipes to your table, blended perfectly with modern cooking techniques.</p>
                     <p>Whether it's the smoky aroma of our Tandoori Kebabs, the comforting richness of our Butter Chicken, or the spicy zing of our Asian Delights, every dish is crafted to elevate your mood.</p>
-                    
-                    <div class="stats-row">
-                        <div class="stat-box">
-                            <h3 class="gold-text">200+</h3>
-                            <p>Premium Dishes</p>
-                        </div>
-                        <div class="stat-box">
-                            <h3 class="gold-text">100%</h3>
-                            <p>Fresh Ingredients</p>
-                        </div>
-                        <div class="stat-box">
-                            <h3 class="gold-text">2 AM</h3>
-                            <p>Late Night Service</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- OUR CORE VALUES (Features Box) -->
-    <section class="core-values bg-dark">
+    <!-- OUR CORE VALUES -->
+    <section class="core-values section-padding">
         <div class="container">
-            <div class="section-header text-center">
+            <div class="section-header text-center glass-header">
                 <h4 class="section-subtitle">Why Choose Us</h4>
-                <h2 class="section-title">Our <span class="gold-text">Philosophy</span></h2>
+                <h2 class="section-title">Our <span class="theme-accent">Philosophy</span></h2>
                 <div class="heading-divider"></div>
             </div>
 
             <div class="values-grid">
-                <div class="value-card">
+                <div class="value-card glass-card">
                     <div class="value-icon"><i class="fas fa-seedling"></i></div>
                     <h3>Purity & Quality</h3>
                     <p>We source the finest spices and farm-fresh ingredients to ensure every Veg and Non-Veg dish is a masterpiece of purity.</p>
                 </div>
-                <div class="value-card">
+                <div class="value-card glass-card">
                     <div class="value-icon"><i class="fas fa-crown"></i></div>
                     <h3>Royal Ambiance</h3>
                     <p>Designed with emerald greens and woody textures, our restaurant offers a premium, relaxing vibe for your family and friends.</p>
                 </div>
-                <div class="value-card">
+                <div class="value-card glass-card">
                     <div class="value-icon"><i class="fas fa-glass-cheers"></i></div>
                     <h3>Togetherness</h3>
                     <p>From grand weddings and birthday parties to cozy dinners, we provide the perfect setting and catering to celebrate life.</p>
@@ -151,30 +152,30 @@
         </div>
     </section>
 
-    <!-- CALL TO ACTION -->
+    <!-- CALL TO ACTION (Glassmorphism) -->
     <section class="cta-banner">
         <div class="cta-overlay"></div>
-        <div class="container cta-content text-center">
+        <div class="container cta-content text-center glass-panel-large">
             <h2>Experience the Magic Live</h2>
             <p>Join us today and embark on a delicious journey. Reserve your table now!</p>
-            <a href="menu-specials.html" class="btn-secondary btn-large">View Menu</a>
+            <a href="menu-specials.html" class="btn-secondary btn-large glass-btn">View Menu</a>
             <a href="contact.html" class="btn-primary btn-large" style="margin-left: 10px;">Book a Table</a>
         </div>
     </section>
 
     <!-- FLOATING WHATSAPP -->
-    <a href="https://wa.me/919044449969?text=Hello%20Indian%20Food%20Forest,%20I%20have%20an%20enquiry!" class="floating-btn whatsapp-float" target="_blank" aria-label="WhatsApp Us">
+    <a href="https://wa.me/919044449969?text=Hello%20Indian%20Food%20Forest,%20I%20have%20an%20enquiry!" class="floating-btn whatsapp-float glass-float" target="_blank" aria-label="WhatsApp Us">
         <i class="fab fa-whatsapp"></i>
     </a>
-    <button id="backToTop" class="floating-btn back-to-top" aria-label="Back to top">
+    <button id="backToTop" class="floating-btn back-to-top glass-float" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
     <!-- FOOTER -->
-    <footer class="site-footer">
+    <footer class="site-footer glass-footer">
         <div class="container footer-grid">
             <div class="footer-widget about-widget">
-                <h3 class="footer-logo">INDIAN <span class="gold-text">FOOD FOREST</span></h3>
+                <h3 class="footer-logo">INDIAN <span class="theme-accent">FOOD FOREST</span></h3>
                 <p>A place where Taste, Tradition & Togetherness come alive. Join us for a memorable dining experience.</p>
                 <div class="social-icons">
                     <a href="https://www.instagram.com/indianfoodforest" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -198,7 +199,7 @@
                 <ul class="contact-info">
                     <li>
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>Shop No. 50, Opp. Ramnagar Gate, Near M Ward Digha, Thane Belapur MIDC Road, Thane - 400708</span>
+                        <span>Shop No. 50, Ramnagar Gate, MIDC Road, Thane - 400708</span>
                     </li>
                     <li>
                         <i class="fas fa-phone-alt"></i>
