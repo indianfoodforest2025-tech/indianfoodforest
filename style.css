@@ -372,16 +372,50 @@ input, select, textarea {
 input:focus, select:focus, textarea:focus { outline: none; border-color: var(--theme-accent); background: rgba(0,0,0,0.5); }
 option { background: var(--primary-navy); color: #fff; }
 
-/* --- Floating Buttons --- */
-.glass-float {
-    background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.2);
+/* --- Floating Action Buttons (Fixed Layout & Sizing) --- */
+.whatsapp-float, .back-to-top {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    z-index: 9999;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: var(--transition);
 }
-.whatsapp-float { bottom: 25px; left: 25px; background-color: rgba(37, 211, 102, 0.9); }
-.whatsapp-float:hover { background-color: #25d366; transform: scale(1.1); }
-.back-to-top { bottom: 25px; right: 25px; background-color: rgba(212, 175, 55, 0.9); color: #000; opacity: 0; visibility: hidden; }
-.back-to-top.show { opacity: 1; visibility: visible; }
-.back-to-top:hover { background-color: var(--theme-accent); transform: translateY(-5px); }
+
+/* WhatsApp Button (Bottom Left Corner) */
+.whatsapp-float {
+    bottom: 30px;
+    left: 30px;
+    background-color: #25d366;
+    color: #fff;
+}
+.whatsapp-float:hover {
+    background-color: #20ba5a;
+    transform: scale(1.1);
+}
+
+/* Back to Top Button (Bottom Right Corner) */
+.back-to-top {
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--theme-accent);
+    color: #000;
+    opacity: 0;
+    visibility: hidden;
+}
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+.back-to-top:hover {
+    background-color: #f3e5ab;
+    transform: translateY(-5px);
+}
 
 /* --- Footer --- */
 .glass-footer {
@@ -443,6 +477,17 @@ option { background: var(--primary-navy); color: #fff; }
     .hero-btn-group { display: flex; flex-direction: column; }
     .hero-btn-group a { margin: 8px 0; }
     
-    .whatsapp-float { width: 45px; height: 45px; font-size: 1.3rem; bottom: 20px; left: 20px; }
-    .back-to-top { width: 40px; height: 40px; font-size: 1.1rem; bottom: 20px; right: 20px; }
+    .whatsapp-float, .back-to-top {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+    .whatsapp-float {
+        bottom: 20px;
+        left: 20px;
+    }
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+    }
 }
