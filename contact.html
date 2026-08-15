@@ -41,11 +41,11 @@
         </div>
     </div>
 
-    <!-- MAIN NAVIGATION -->
-    <header class="navbar" id="navbar">
+    <!-- MAIN NAVIGATION (Glassmorphism) -->
+    <header class="navbar glass-navbar" id="navbar">
         <div class="nav-container">
             <a href="index.html" class="brand-logo">
-                <span class="brand-name">INDIAN <span class="gold-text">FOOD FOREST</span></span>
+                <span class="brand-name">INDIAN <span class="theme-accent">FOOD FOREST</span></span>
             </a>
             
             <div class="hamburger" id="hamburger">
@@ -61,7 +61,7 @@
                     
                     <li class="dropdown">
                         <a href="#menu">Our Menu <i class="fas fa-chevron-down"></i></a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu glass-dropdown">
                             <li><a href="menu-starters.html">Soups & Starters</a></li>
                             <li><a href="menu-tandoori.html">Tandoori & Kebabs</a></li>
                             <li><a href="menu-asian.html">Asian Delights</a></li>
@@ -81,10 +81,10 @@
     </header>
 
     <!-- PAGE HEADER -->
-    <section class="page-header contact-bg">
+    <section class="page-header menu-bg">
         <div class="header-overlay"></div>
         <div class="container text-center">
-            <h1 class="page-title">Get In <span class="gold-text">Touch</span></h1>
+            <h1 class="page-title">Get In <span class="theme-accent">Touch</span></h1>
             <p class="breadcrumbs"><a href="index.html">Home</a> <i class="fas fa-angle-right"></i> Contact Us</p>
         </div>
     </section>
@@ -94,11 +94,11 @@
         <div class="container">
             <div class="contact-wrapper">
                 
-                <!-- Left Side: Contact Information -->
-                <div class="contact-info-panel">
+                <!-- Left Side: Contact Information (Glass Panel) -->
+                <div class="contact-info-panel glass-panel">
                     <div class="section-header">
                         <h4 class="section-subtitle">We are here for you</h4>
-                        <h2 class="section-title" style="font-size: 2.2rem;">Let's Plan Your <br><span class="gold-text">Visit</span></h2>
+                        <h2 class="section-title" style="font-size: 2.2rem;">Let's Plan Your <br><span class="theme-accent">Visit</span></h2>
                         <div class="heading-divider" style="margin: 15px 0 30px;"></div>
                     </div>
 
@@ -137,8 +137,8 @@
                     </div>
                 </div>
 
-                <!-- Right Side: Reservation Form -->
-                <div class="contact-form-panel">
+                <!-- Right Side: Reservation Form (Glass Panel) -->
+                <div class="contact-form-panel glass-panel-large">
                     <div class="form-header">
                         <h3>Send an Enquiry</h3>
                         <p>Fill out the form below and our team will contact you shortly to confirm your request.</p>
@@ -147,7 +147,7 @@
                     <!-- Formspree Integration Note: 
                          Replace "YOUR_FORMSPREE_ENDPOINT" with the link you get from Formspree.io 
                          to receive emails directly to indianfoodforest2025@gmail.com -->
-                    <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST" class="reservation-form">
+                    <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST" class="reservation-form glass-form">
                         
                         <div class="form-row">
                             <div class="form-group">
@@ -195,40 +195,44 @@
                             <textarea id="message" name="message" rows="4" placeholder="Tell us more about your event or preferences..."></textarea>
                         </div>
 
-                        <button type="submit" class="btn-primary btn-submit">Submit Enquiry <i class="fas fa-paper-plane"></i></button>
+                        <button type="submit" class="btn-primary btn-submit full-width">Submit Enquiry <i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- GOOGLE MAPS SECTION -->
-    <section class="map-section">
-        <!-- Placeholder iframe. You can update the 'src' link once your Google Business Profile is active -->
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15074.887884877395!2d72.9863483!3d19.1636254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b8c8d8a7c2c1%3A0x6b4a4f89d0c9f1a2!2sKalwa%2C%20Thane%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
-            width="100%" 
-            height="450" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+    <!-- GOOGLE MAPS SECTION (With Glass Wrapper) -->
+    <section class="map-section section-padding" style="padding-top: 0;">
+        <div class="container">
+            <div class="glass-panel" style="padding: 10px; border-radius: 20px; overflow: hidden;">
+                <!-- Placeholder iframe. You can update the 'src' link once your Google Business Profile is active -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15074.887884877395!2d72.9863483!3d19.1636254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b8c8d8a7c2c1%3A0x6b4a4f89d0c9f1a2!2sKalwa%2C%20Thane%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0; border-radius: 15px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
     </section>
 
     <!-- FLOATING ACTION BUTTONS -->
-    <a href="https://wa.me/919044449969?text=Hello%20Indian%20Food%20Forest,%20I%20have%20an%20enquiry!" class="floating-btn whatsapp-float" target="_blank" aria-label="WhatsApp Us">
+    <a href="https://wa.me/919044449969?text=Hello%20Indian%20Food%20Forest,%20I%20have%20an%20enquiry!" class="floating-btn whatsapp-float glass-float" target="_blank" aria-label="WhatsApp Us">
         <i class="fab fa-whatsapp"></i>
     </a>
-    <button id="backToTop" class="floating-btn back-to-top" aria-label="Back to top">
+    <button id="backToTop" class="floating-btn back-to-top glass-float" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- FOOTER SECTION -->
-    <footer class="site-footer">
+    <!-- FOOTER SECTION (Clean & Professional) -->
+    <footer class="site-footer glass-footer">
         <div class="container footer-grid">
             <div class="footer-widget about-widget">
-                <h3 class="footer-logo">INDIAN <span class="gold-text">FOOD FOREST</span></h3>
+                <h3 class="footer-logo">INDIAN <span class="theme-accent">FOOD FOREST</span></h3>
                 <p>A place where Taste, Tradition & Togetherness come alive. Join us for a memorable dining experience.</p>
                 <div class="social-icons">
                     <a href="https://www.instagram.com/indianfoodforest" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -250,9 +254,21 @@
             <div class="footer-widget contact-widget">
                 <h4>Reach Us</h4>
                 <ul class="contact-info">
-                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Shop No. 50, Ramnagar Gate, MIDC Road, Thane - 400708</a></li>
-                    <li><a href="tel:+919044449969"><i class="fas fa-phone-alt"></i> +91 9044449969 / 9137769044</a></li>
-                    <li><a href="mailto:indianfoodforest2025@gmail.com"><i class="fas fa-envelope"></i> indianfoodforest2025@gmail.com</a></li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Shop No. 50, Opp. Ramnagar Gate, Near M Ward Digha, Thane Belapur MIDC Road, Thane - 400708</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>
+                            <a href="tel:+919044449969">+91 9044449969</a><br>
+                            <a href="tel:+919137769044">+91 9137769044</a>
+                        </span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:indianfoodforest2025@gmail.com">indianfoodforest2025@gmail.com</a>
+                    </li>
                 </ul>
             </div>
         </div>
