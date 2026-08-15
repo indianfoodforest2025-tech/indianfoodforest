@@ -144,31 +144,34 @@
                         <p>Fill out the form below and our team will contact you shortly to confirm your request.</p>
                     </div>
                     
-                    <!-- Formspree Integration Note: 
-                         Replace "YOUR_FORMSPREE_ENDPOINT" with the link you get from Formspree.io 
-                         to receive emails directly to indianfoodforest2025@gmail.com -->
-                    <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST" class="reservation-form glass-form">
+                    <!-- Success Message Box (Handled by Formspree AJAX) -->
+                    <div data-fs-success style="display:none; background: rgba(40, 167, 69, 0.25); border: 1px solid #28a745; color: #fff; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center; font-weight: 600;">
+                        <i class="fas fa-check-circle" style="color: #28a745; margin-right: 5px;"></i> Thank you! Your message has been sent successfully. We will get back to you soon.
+                    </div>
+
+                    <!-- Formspree Connected Form -->
+                    <form id="my-form" action="https://formspree.io/f/xzepabvr" method="POST" class="reservation-form glass-form">
                         
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="name">Full Name *</label>
-                                <input type="text" id="name" name="name" required placeholder="John Doe">
+                                <input type="text" id="name" name="name" required placeholder="John Doe" data-fs-field>
                             </div>
                             <div class="form-group">
                                 <label for="phone">Mobile Number *</label>
-                                <input type="tel" id="phone" name="phone" required placeholder="+91 xxxxx xxxxx">
+                                <input type="tel" id="phone" name="phone" required placeholder="+91 xxxxx xxxxx" data-fs-field>
                             </div>
                         </div>
 
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="email">Email Address</label>
-                                <input type="email" id="email" name="email" placeholder="john@example.com">
+                                <input type="email" id="email" name="email" placeholder="john@example.com" data-fs-field>
                             </div>
                             <div class="form-group">
                                 <label for="enquiry-type">Enquiry Type *</label>
                                 <div class="select-wrapper">
-                                    <select id="enquiry-type" name="enquiry_type" required>
+                                    <select id="enquiry-type" name="enquiry_type" required data-fs-field>
                                         <option value="" disabled selected>Select an option</option>
                                         <option value="Table Reservation">Table Reservation</option>
                                         <option value="Birthday / Party Booking">Birthday / Party Booking</option>
@@ -182,20 +185,20 @@
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="date">Preferred Date</label>
-                                <input type="date" id="date" name="date">
+                                <input type="date" id="date" name="date" data-fs-field>
                             </div>
                             <div class="form-group">
                                 <label for="guests">No. of Guests</label>
-                                <input type="number" id="guests" name="guests" min="1" placeholder="e.g. 4">
+                                <input type="number" id="guests" name="guests" min="1" placeholder="e.g. 4" data-fs-field>
                             </div>
                         </div>
 
                         <div class="form-group full-width">
                             <label for="message">Your Message / Special Requests</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Tell us more about your event or preferences..."></textarea>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us more about your event or preferences..." data-fs-field></textarea>
                         </div>
 
-                        <button type="submit" class="btn-primary btn-submit full-width">Submit Enquiry <i class="fas fa-paper-plane"></i></button>
+                        <button type="submit" class="btn-primary btn-submit full-width" data-fs-submit-btn>Submit Enquiry <i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>
@@ -206,7 +209,6 @@
     <section class="map-section section-padding" style="padding-top: 0;">
         <div class="container">
             <div class="glass-panel" style="padding: 10px; border-radius: 20px; overflow: hidden;">
-                <!-- Placeholder iframe. You can update the 'src' link once your Google Business Profile is active -->
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15074.887884877395!2d72.9863483!3d19.1636254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b8c8d8a7c2c1%3A0x6b4a4f89d0c9f1a2!2sKalwa%2C%20Thane%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
                     width="100%" 
@@ -276,6 +278,13 @@
             <p>&copy; 2026 Indian Food Forest. All Rights Reserved. | <a href="contact.html">Support: +91 7304301858</a></p>
         </div>
     </footer>
+
+    <!-- Formspree AJAX Library Initialization -->
+    <script>
+        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+        formspree('initForm', { formElement: '#my-form', formId: 'xzepabvr' });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 
     <!-- LINK TO JAVASCRIPT -->
     <script src="script.js"></script>
