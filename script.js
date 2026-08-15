@@ -66,9 +66,32 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }
+
+    // --- 6. Form Submission Loading & Success Feedback ---
+    const contactForm = document.getElementById('my-form');
+    const submitBtn = contactForm ? contactForm.querySelector('button[type="submit"]') : null;
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', function() {
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = 'Submitting... <i class="fas fa-spinner fa-spin"></i>';
+            }
+        });
+
+        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+        formspree('on', 'success', function() {
+            alert('Thank you! Your enquiry has been sent successfully. We will get back to you shortly.');
+            if (submitBtn) {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = 'Submit Enquiry <i class="fas fa-paper-plane"></i>';
+            }
+            contactForm.reset();
+        });
+    }
 });
 
-// --- 6. Dish Modal (Pop-up) Logic for Text-Only Cards ---
+// --- 7. Dish Modal (Pop-up) Logic for Text-Only Cards ---
 function openDishModal(imgSrc, title, price, dietType, description) {
     const modal = document.getElementById('dishModal');
     if(!modal) return;
