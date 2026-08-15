@@ -42,10 +42,10 @@
     </div>
 
     <!-- MAIN NAVIGATION -->
-    <header class="navbar" id="navbar">
+    <header class="navbar glass-navbar" id="navbar">
         <div class="nav-container">
             <a href="index.html" class="brand-logo">
-                <span class="brand-name">INDIAN <span class="gold-text">FOOD FOREST</span></span>
+                <span class="brand-name">INDIAN <span class="theme-accent">FOOD FOREST</span></span>
             </a>
             
             <div class="hamburger" id="hamburger">
@@ -61,7 +61,7 @@
                     
                     <li class="dropdown">
                         <a href="#menu" class="active">Our Menu <i class="fas fa-chevron-down"></i></a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu glass-dropdown">
                             <li><a href="menu-starters.html">Soups & Starters</a></li>
                             <li><a href="menu-tandoori.html">Tandoori & Kebabs</a></li>
                             <li><a href="menu-asian.html">Asian Delights</a></li>
@@ -84,52 +84,70 @@
     <section class="page-header menu-bg">
         <div class="header-overlay"></div>
         <div class="container text-center">
-            <h1 class="page-title">Chef's <span class="gold-text">Specials</span></h1>
+            <h1 class="page-title">Chef's <span class="theme-accent">Specials</span></h1>
             <p class="breadcrumbs"><a href="index.html">Home</a> <i class="fas fa-angle-right"></i> Menu <i class="fas fa-angle-right"></i> Specials & Platters</p>
         </div>
     </section>
 
     <!-- CATEGORY JUMP MENU -->
-    <div class="category-nav">
+    <div class="category-nav glass-panel">
         <div class="container text-center">
-            <a href="#platters" class="cat-btn">Grand Platters</a>
-            <a href="#sizzlers" class="cat-btn">Sizzling Sizzlers</a>
-            <a href="#hot-plates" class="cat-btn">Hot Plate Starters</a>
-            <a href="#combos" class="cat-btn">Meals & Combos</a>
+            <a href="#platters" class="cat-btn glass-btn">Grand Platters</a>
+            <a href="#sizzlers" class="cat-btn glass-btn">Sizzling Sizzlers</a>
+            <a href="#hot-plates" class="cat-btn glass-btn">Hot Plate Starters</a>
+            <a href="#combos" class="cat-btn glass-btn">Meals & Combos</a>
         </div>
     </div>
 
     <!-- GRAND PLATTERS SECTION -->
     <section id="platters" class="menu-section section-padding">
         <div class="container">
-            <div class="section-header text-center">
-                <h2 class="section-title">Grand Appetizer <span class="gold-text">Platters</span></h2>
+            <div class="section-header text-center glass-header">
+                <h2 class="section-title">Grand Appetizer <span class="theme-accent">Platters</span></h2>
                 <div class="heading-divider"></div>
                 <p style="color: var(--text-light); max-width: 600px; margin: 0 auto 30px;">Perfect for sharing! A massive assortment of our finest starters, meticulously curated by our head chef.</p>
             </div>
 
             <div class="menu-grid">
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=800', 'Shifu Veg Platter', '₹700', 'Veg', 'The ultimate vegetarian feast: Manchurian Dry, Babycorn & Mushroom Chilli, Paneer Kung Pao, Basil Paneer, and Finger Chips all in one grand platter.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=400" alt="Veg Platter" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Shifu Veg Platter', '₹700', 'Veg', 'The ultimate vegetarian feast: Manchurian Dry, Babycorn & Mushroom Chilli, Paneer Kung Pao, Basil Paneer, and Finger Chips all in one grand platter.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Shifu Veg Platter</h3><span class="diet-indicator veg"></span></div>
-                        <p class="price gold-text">₹700</p>
+                        <div class="card-header">
+                            <h3>Shifu Veg Platter</h3>
+                            <span class="diet-indicator veg"></span>
+                        </div>
+                        <p class="dish-short-desc">The ultimate vegetarian feast: Assorted paneer, mushroom, babycorn starters, and finger chips all in one grand platter.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">₹700</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=800', 'Shifu Non-Veg Platter', '₹800', 'Non-Veg', 'A carnivore\'s dream: Fish Chilli, Prawns Butter Garlic, Chicken Lollypops, Chicken Kung Pao / Basil Chicken, and crispy Finger Chips.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=400" alt="Non-Veg Platter" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Shifu Non-Veg Platter', '₹800', 'Non-Veg', 'A carnivore\'s dream: Fish Chilli, Prawns Butter Garlic, Chicken Lollypops, Chicken Kung Pao / Basil Chicken, and crispy Finger Chips.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Shifu Non-Veg Platter</h3><span class="diet-indicator non-veg"></span></div>
-                        <p class="price gold-text">₹800</p>
+                        <div class="card-header">
+                            <h3>Shifu Non-Veg Platter</h3>
+                            <span class="diet-indicator non-veg"></span>
+                        </div>
+                        <p class="dish-short-desc">A carnivore's dream: Fish Chilli, Prawns Butter Garlic, Chicken Lollypops, Kung Pao Chicken, and crispy Finger Chips.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">₹800</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=800', 'Shifu Veg & Non-Veg Platter', '₹1100', 'Veg/Non-Veg', 'The King of all platters! A massive combination of Fish Chilli, Butter Garlic Prawns, Chicken Lollypops, Kung Pao Chicken, Paneer Satay, Mushroom Chilli, Manchurian, and Fries.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=400" alt="Mix Platter" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Shifu Veg & Non-Veg Platter', '₹1100', 'Veg/Non-Veg', 'The King of all platters! A massive combination of Fish Chilli, Butter Garlic Prawns, Chicken Lollypops, Kung Pao Chicken, Paneer Satay, Mushroom Chilli, Manchurian, and Fries.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Veg & Non-Veg Mix Platter</h3><span class="diet-indicator non-veg"></span></div>
-                        <p class="price gold-text">₹1100</p>
+                        <div class="card-header">
+                            <h3>Veg & Non-Veg Mix Platter</h3>
+                            <span class="diet-indicator non-veg"></span>
+                        </div>
+                        <p class="dish-short-desc">The King of all platters! A massive combination of premium seafood, chicken, and vegetarian starters.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">₹1100</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -137,53 +155,82 @@
     </section>
 
     <!-- SIZZLING SIZZLERS SECTION -->
-    <section id="sizzlers" class="menu-section section-padding bg-dark">
+    <section id="sizzlers" class="menu-section section-padding">
         <div class="container">
-            <div class="section-header text-center">
-                <h2 class="section-title">Sizzling <span class="gold-text">Sizzlers</span></h2>
+            <div class="section-header text-center glass-header">
+                <h2 class="section-title">Sizzling <span class="theme-accent">Sizzlers</span></h2>
                 <div class="heading-divider"></div>
                 <p style="color: var(--text-light); max-width: 600px; margin: 0 auto 30px;">Every sizzler is a complete meal! Served smoking hot on a cast-iron plate. Includes: Starter + Rice or Noodles + Sauteed Veggies + French Fries + Kimchi.</p>
             </div>
 
             <div class="menu-grid">
-                <!-- Grouping Sizzlers by Flavor Profile -->
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1544025162-811114215b2e?q=80&w=800', 'Manchurian / Schezwan Sizzler', 'Veg/Chi ₹500 | Seafood ₹600', 'Veg/Non-Veg', 'The classic Indo-Chinese sizzler experience. Bold garlic, soy, and schezwan flavors bubbling over a bed of rice or noodles.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1544025162-811114215b2e?q=80&w=400" alt="Schezwan Sizzler" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Manchurian / Schezwan Sizzler', 'Veg/Chi ₹500 | Seafood ₹600', 'Veg/Non-Veg', 'The classic Indo-Chinese sizzler experience. Bold garlic, soy, and schezwan flavors bubbling over a bed of rice or noodles.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Manchurian / Schezwan Sizzler</h3><span class="diet-indicator non-veg"></span></div>
-                        <p class="price gold-text">Starts from ₹500</p>
+                        <div class="card-header">
+                            <h3>Manchurian / Schezwan Sizzler</h3>
+                            <span class="diet-indicator non-veg"></span>
+                        </div>
+                        <p class="dish-short-desc">The classic Indo-Chinese sizzler experience. Bold flavors bubbling over a bed of rice or noodles with sides.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">Starts from ₹500</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1544025162-811114215b2e?q=80&w=800', 'Hunan / Kung Pao Sizzler', 'Veg/Chi ₹500 | Seafood ₹600', 'Veg/Non-Veg', 'A fiery, nutty, and savory sizzler loaded with roasted peanuts, dry red chillies, and premium Asian sauces.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1544025162-811114215b2e?q=80&w=400" alt="Kung Pao Sizzler" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Hunan / Kung Pao Sizzler', 'Veg/Chi ₹500 | Seafood ₹600', 'Veg/Non-Veg', 'A fiery, nutty, and savory sizzler loaded with roasted peanuts, dry red chillies, and premium Asian sauces.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Hunan / Kung Pao Sizzler</h3><span class="diet-indicator non-veg"></span></div>
-                        <p class="price gold-text">Starts from ₹500</p>
+                        <div class="card-header">
+                            <h3>Hunan / Kung Pao Sizzler</h3>
+                            <span class="diet-indicator non-veg"></span>
+                        </div>
+                        <p class="dish-short-desc">A fiery, nutty, and savory sizzler loaded with roasted peanuts, dry red chillies, and premium Asian sauces.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">Starts from ₹500</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1544025162-811114215b2e?q=80&w=800', 'Thai Red / Green Sizzler', 'Veg/Chi ₹500 | Seafood ₹600', 'Veg/Non-Veg', 'An aromatic masterpiece. Sizzling rice soaked in authentic coconut-milk based Thai curry, served with fresh sauteed greens.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1544025162-811114215b2e?q=80&w=400" alt="Thai Sizzler" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Thai Red / Green Sizzler', 'Veg/Chi ₹500 | Seafood ₹600', 'Veg/Non-Veg', 'An aromatic masterpiece. Sizzling rice soaked in authentic coconut-milk based Thai curry, served with fresh sauteed greens.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Thai Red / Green Sizzler</h3><span class="diet-indicator veg"></span></div>
-                        <p class="price gold-text">Starts from ₹500</p>
+                        <div class="card-header">
+                            <h3>Thai Red / Green Sizzler</h3>
+                            <span class="diet-indicator veg"></span>
+                        </div>
+                        <p class="dish-short-desc">An aromatic masterpiece. Sizzling rice soaked in authentic coconut-milk based Thai curry, served with greens.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">Starts from ₹500</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1544025162-811114215b2e?q=80&w=800', 'Malaysian / Barbeque Sizzler', 'Veg/Chi ₹500 | Seafood ₹600', 'Veg/Non-Veg', 'Sweet, smoky, and complex flavors. Choose the exotic Malaysian spice blend or the universally loved smoky Barbeque sauce.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1544025162-811114215b2e?q=80&w=400" alt="Barbeque Sizzler" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Malaysian / Barbeque Sizzler', 'Veg/Chi ₹500 | Seafood ₹600', 'Veg/Non-Veg', 'Sweet, smoky, and complex flavors. Choose the exotic Malaysian spice blend or the universally loved smoky Barbeque sauce.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Malaysian / Barbeque Sizzler</h3><span class="diet-indicator non-veg"></span></div>
-                        <p class="price gold-text">Starts from ₹500</p>
+                        <div class="card-header">
+                            <h3>Malaysian / Barbeque Sizzler</h3>
+                            <span class="diet-indicator non-veg"></span>
+                        </div>
+                        <p class="dish-short-desc">Sweet, smoky, and complex flavors. Choose exotic Malaysian spice blend or the universally loved smoky Barbeque.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">Starts from ₹500</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1544025162-811114215b2e?q=80&w=800', 'Burmese Sizzler', 'Veg/Chi/Fish/Prawns ₹500', 'Veg/Non-Veg', 'A unique, comforting Burmese flavor profile brought to life on a sizzling hot plate.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1544025162-811114215b2e?q=80&w=400" alt="Burmese Sizzler" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Burmese Sizzler', 'Veg/Chi/Fish/Prawns ₹500', 'Veg/Non-Veg', 'A unique, comforting Burmese flavor profile brought to life on a sizzling hot plate with your choice of protein.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Burmese Sizzler</h3><span class="diet-indicator non-veg"></span></div>
-                        <p class="price gold-text">All Variants ₹500</p>
+                        <div class="card-header">
+                            <h3>Burmese Sizzler</h3>
+                            <span class="diet-indicator non-veg"></span>
+                        </div>
+                        <p class="dish-short-desc">A unique, comforting Burmese flavor profile brought to life on a sizzling hot plate with your choice of protein.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">All Variants ₹500</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -193,17 +240,23 @@
     <!-- HOT PLATE STARTERS SECTION -->
     <section id="hot-plates" class="menu-section section-padding">
         <div class="container">
-            <div class="section-header text-center">
-                <h2 class="section-title">Sizzling Hot Plate <span class="gold-text">Starters</span></h2>
+            <div class="section-header text-center glass-header">
+                <h2 class="section-title">Sizzling Hot Plate <span class="theme-accent">Starters</span></h2>
                 <div class="heading-divider"></div>
             </div>
 
-            <div class="menu-grid">
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1564834724105-918b73d1b9e0?q=80&w=800', 'Hot Plate Starters (Choose Flavor)', 'Veg ₹280 | Paneer/Chi ₹300 | Seafood ₹350', 'Veg/Non-Veg', 'Your favorite starters served smoking hot on a sizzling cast-iron pan. Available Flavors: Manchurian, Schezwan, Chilli Garlic, Hunan, Kung Pao, Thai, Malaysian, or Barbeque.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1564834724105-918b73d1b9e0?q=80&w=400" alt="Hot Plate Starter" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+            <div class="menu-grid" style="justify-content: center;">
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Hot Plate Starters (Choose Flavor)', 'Veg ₹280 | Paneer/Chi ₹300 | Seafood ₹350', 'Veg/Non-Veg', 'Your favorite starters served smoking hot on a sizzling cast-iron pan. Available Flavors: Manchurian, Schezwan, Chilli Garlic, Hunan, Kung Pao, Thai, Malaysian, or Barbeque.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Hot Plate Dry Starters</h3><span class="diet-indicator non-veg"></span></div>
-                        <p class="price gold-text">Starts from ₹280</p>
+                        <div class="card-header">
+                            <h3>Hot Plate Dry Starters</h3>
+                            <span class="diet-indicator non-veg"></span>
+                        </div>
+                        <p class="dish-short-desc">Your favorite starters served smoking hot on a sizzling cast-iron pan in a variety of premium Asian flavors.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">Starts from ₹280</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -211,93 +264,122 @@
     </section>
 
     <!-- COMBOS & SET MEALS SECTION -->
-    <section id="combos" class="menu-section section-padding bg-dark">
+    <section id="combos" class="menu-section section-padding">
         <div class="container">
-            <div class="section-header text-center">
-                <h2 class="section-title">Master Shifu <span class="gold-text">Combos & Set Meals</span></h2>
+            <div class="section-header text-center glass-header">
+                <h2 class="section-title">Master Shifu <span class="theme-accent">Combos & Set Meals</span></h2>
                 <div class="heading-divider"></div>
                 <p style="color: var(--text-light); max-width: 600px; margin: 0 auto 30px;">The perfect solo feast! Combos Include: Fried Rice or Hakka Noodles + 2 Pcs Lollypop or Manchurian Dry + Kimchi + Soft Drink + Omelette (in Non-Veg).</p>
             </div>
 
             <div class="menu-grid">
                 <!-- Combos -->
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=800', 'Chinese / Thai Combo', 'Veg ₹320 | Chi ₹350 | Seafood ₹400', 'Veg/Non-Veg', 'A complete meal featuring your choice of Manchurian/Schezwan Curry or authentic Thai Red/Green Curry alongside rice/noodles, starters, and a drink.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=400" alt="Chinese Combo Meal" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Chinese / Thai Combo', 'Veg ₹320 | Chi ₹350 | Seafood ₹400', 'Veg/Non-Veg', 'A complete meal featuring your choice of Manchurian/Schezwan Curry or authentic Thai Red/Green Curry alongside rice/noodles, starters, and a drink.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Chinese / Thai Combo Meal</h3><span class="diet-indicator veg"></span></div>
-                        <p class="price gold-text">Starts from ₹320</p>
+                        <div class="card-header">
+                            <h3>Chinese / Thai Combo Meal</h3>
+                            <span class="diet-indicator veg"></span>
+                        </div>
+                        <p class="dish-short-desc">A complete meal featuring Manchurian/Schezwan or Thai Curry alongside rice/noodles, starters, and a drink.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">Starts from ₹320</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=800', 'Kung Pao / Malaysian / Chilli Combo', 'Veg ₹320 | Chi ₹350 | Seafood ₹400', 'Veg/Non-Veg', 'Your favorite premium curries (Kung Pao, Malaysian, or Classic Chilli) served as a full combo meal with starters and sides.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=400" alt="Premium Combo" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Kung Pao / Malaysian / Chilli Combo', 'Veg ₹320 | Chi ₹350 | Seafood ₹400', 'Veg/Non-Veg', 'Your favorite premium curries (Kung Pao, Malaysian, or Classic Chilli) served as a full combo meal with starters and sides.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Premium Curries Combo</h3><span class="diet-indicator non-veg"></span></div>
-                        <p class="price gold-text">Starts from ₹320</p>
+                        <div class="card-header">
+                            <h3>Premium Curries Combo</h3>
+                            <span class="diet-indicator non-veg"></span>
+                        </div>
+                        <p class="dish-short-desc">Your favorite premium curries served as a full combo meal with starters, rice/noodles, and sides.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">Starts from ₹320</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Set Meals -->
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=800', 'Indonesian Fried Rice Set Meal', 'Veg ₹320 / Chicken ₹350', 'Veg/Non-Veg', 'An authentic Indonesian experience. Flavorful fried rice served traditionally with two pieces of rich peanut-sauce Chicken Satay.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=400" alt="Indonesian Set Meal" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Indonesian Fried Rice Set Meal', 'Veg ₹320 / Chicken ₹350', 'Veg/Non-Veg', 'An authentic Indonesian experience. Flavorful fried rice served traditionally with two pieces of rich peanut-sauce Chicken Satay.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Indonesian Fried Rice Set</h3><span class="diet-indicator non-veg"></span></div>
-                        <p class="price gold-text">Veg ₹320 / Chi ₹350</p>
+                        <div class="card-header">
+                            <h3>Indonesian Fried Rice Set</h3>
+                            <span class="diet-indicator non-veg"></span>
+                        </div>
+                        <p class="dish-short-desc">An authentic Indonesian experience. Flavorful fried rice served traditionally with two pieces of rich Chicken Satay.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">Veg ₹320 / Chi ₹350</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=800', 'Burmese / Malaysian Biryani Set', 'Veg ₹320 | Chi ₹350 | Seafood ₹400', 'Veg/Non-Veg', 'Exotic Asian Biryanis served alongside authentic accompanying curries (Penang Curry with Burmese, Classic Curry with Malaysian).')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=400" alt="Burmese Set Meal" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Burmese / Malaysian Biryani Set', 'Veg ₹320 | Chi ₹350 | Seafood ₹400', 'Veg/Non-Veg', 'Exotic Asian Biryanis served alongside authentic accompanying curries (Penang Curry with Burmese, Classic Curry with Malaysian).')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Burmese / Malaysian Biryani Set</h3><span class="diet-indicator non-veg"></span></div>
-                        <p class="price gold-text">Starts from ₹320</p>
+                        <div class="card-header">
+                            <h3>Burmese / Malaysian Biryani Set</h3>
+                            <span class="diet-indicator non-veg"></span>
+                        </div>
+                        <p class="dish-short-desc">Exotic Asian Biryanis served alongside authentic accompanying curries for a full Asian flavor trip.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">Starts from ₹320</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-card" onclick="openDishModal('https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=800', 'Thai Basil Set Meal', '₹300 (Chicken)', 'Non-Veg', 'The iconic Thai street food experience. Spicy Basil Chicken served over Fried Rice and topped with a crispy Thai Omelet.')">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=400" alt="Thai Basil Set Meal" loading="lazy"><div class="overlay-zoom"><i class="fas fa-expand"></i></div></div>
+                <div class="menu-card glass-card text-only-card" onclick="openDishModal('', 'Thai Basil Set Meal', '₹300 (Chicken)', 'Non-Veg', 'The iconic Thai street food experience. Spicy Basil Chicken served over Fried Rice and topped with a crispy Thai Omelet.')">
                     <div class="card-content">
-                        <div class="card-header"><h3>Thai Basil Set Meal</h3><span class="diet-indicator non-veg"></span></div>
-                        <p class="price gold-text">₹300</p>
+                        <div class="card-header">
+                            <h3>Thai Basil Set Meal</h3>
+                            <span class="diet-indicator non-veg"></span>
+                        </div>
+                        <p class="dish-short-desc">The iconic Thai street food experience. Spicy Basil Chicken served over Fried Rice and topped with a crispy Thai Omelet.</p>
+                        <div class="card-footer">
+                            <p class="price theme-accent">₹300</p>
+                            <span class="view-btn">Details <i class="fas fa-eye"></i></span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- DISH DETAIL MODAL (Pop-up system triggered by JavaScript) -->
+    <!-- DISH DETAIL MODAL (Glassmorphism Pop-up) -->
     <div id="dishModal" class="modal-overlay">
-        <div class="modal-box">
+        <div class="modal-box glass-modal">
             <button class="modal-close"><i class="fas fa-times"></i></button>
-            <div class="modal-img-wrapper">
-                <img id="modalImg" src="" alt="Dish Full Image">
-            </div>
-            <div class="modal-info">
+            <div class="modal-info text-only-modal">
                 <div class="modal-title-row">
                     <h2 id="modalTitle">Dish Name</h2>
                     <div id="modalDietIcon" class="diet-indicator"></div>
                 </div>
-                <h3 id="modalPrice" class="gold-text">₹0</h3>
+                <h3 id="modalPrice" class="theme-accent">₹0</h3>
                 <div class="modal-divider"></div>
                 <p id="modalDesc">Dish description.</p>
-                <button class="btn-primary full-width" onclick="closeModal()">Close Window</button>
+                <div class="modal-footer">
+                    <button class="btn-primary full-width" onclick="closeModal()">Close Window</button>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- FLOATING ACTION BUTTONS -->
-    <a href="https://wa.me/919044449969?text=Hello%20Indian%20Food%20Forest,%20I%20have%20an%20enquiry!" class="floating-btn whatsapp-float" target="_blank" aria-label="WhatsApp Us">
+    <a href="https://wa.me/919044449969?text=Hello%20Indian%20Food%20Forest,%20I%20have%20an%20enquiry!" class="floating-btn whatsapp-float glass-float" target="_blank" aria-label="WhatsApp Us">
         <i class="fab fa-whatsapp"></i>
     </a>
-    <button id="backToTop" class="floating-btn back-to-top" aria-label="Back to top">
+    <button id="backToTop" class="floating-btn back-to-top glass-float" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- FOOTER SECTION -->
-    <footer class="site-footer">
+    <!-- FOOTER SECTION (Clean & Professional) -->
+    <footer class="site-footer glass-footer">
         <div class="container footer-grid">
             <div class="footer-widget about-widget">
-                <h3 class="footer-logo">INDIAN <span class="gold-text">FOOD FOREST</span></h3>
+                <h3 class="footer-logo">INDIAN <span class="theme-accent">FOOD FOREST</span></h3>
                 <p>A place where Taste, Tradition & Togetherness come alive. Join us for a memorable dining experience.</p>
                 <div class="social-icons">
                     <a href="https://www.instagram.com/indianfoodforest" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -319,9 +401,21 @@
             <div class="footer-widget contact-widget">
                 <h4>Reach Us</h4>
                 <ul class="contact-info">
-                    <li><a href="https://maps.app.goo.gl/placeholder" target="_blank"><i class="fas fa-map-marker-alt"></i> Shop No. 50, Ramnagar Gate, MIDC Road, Thane - 400708</a></li>
-                    <li><a href="tel:+919044449969"><i class="fas fa-phone-alt"></i> +91 9044449969 / 9137769044</a></li>
-                    <li><a href="mailto:indianfoodforest2025@gmail.com"><i class="fas fa-envelope"></i> indianfoodforest2025@gmail.com</a></li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Shop No. 50, Opp. Ramnagar Gate, Near M Ward Digha, Thane Belapur MIDC Road, Thane - 400708</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>
+                            <a href="tel:+919044449969">+91 9044449969</a><br>
+                            <a href="tel:+919137769044">+91 9137769044</a>
+                        </span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:indianfoodforest2025@gmail.com">indianfoodforest2025@gmail.com</a>
+                    </li>
                 </ul>
             </div>
         </div>
