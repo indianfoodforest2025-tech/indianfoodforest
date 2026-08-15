@@ -34,13 +34,13 @@ html {
     scroll-behavior: smooth;
 }
 
-/* GLOBAL BACKGROUND (interior.jpg) */
+/* GLOBAL BACKGROUND (interior.jpg in Main Folder) */
 body {
     font-family: var(--font-body);
     color: var(--text-light);
     line-height: 1.6;
     overflow-x: hidden;
-    background-image: url('images/interior.jpg');
+    background-image: url('interior.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -133,7 +133,7 @@ ul { list-style: none; }
 .brand-logo { display: flex; align-items: center; }
 .brand-name { 
     font-family: var(--font-heading); 
-    font-size: 1.25rem; /* Perfect balanced size for mobile */
+    font-size: 1.25rem; 
     font-weight: 700; 
     letter-spacing: 0.5px;
     white-space: nowrap;
@@ -315,7 +315,7 @@ ul { list-style: none; }
 .card-footer .price { font-family: var(--font-body); font-size: 1.1rem; font-weight: 700; color: var(--primary-green); }
 .card-footer .view-btn { font-size: 0.8rem; font-weight: 600; color: var(--theme-accent); text-transform: uppercase; letter-spacing: 1px; }
 
-/* --- Modal Pop-up (Fixed Click & Visuals) --- */
+/* --- Modal Pop-up --- */
 .modal-overlay {
     position: fixed; top: 0; left: 0; width: 100%; height: 100vh;
     background: rgba(0, 0, 0, 0.75); backdrop-filter: blur(8px);
